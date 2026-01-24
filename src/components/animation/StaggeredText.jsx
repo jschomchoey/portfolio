@@ -6,13 +6,15 @@ export default function StaggeredText({
   as: Tag = "p",
   highlightWords = [],
   highlightClassName = "text-blue-500 font-bold",
-  delay = 0.05,
-  duration = 0.5,
+  duration = 1,
   initialDelay = 0,
   className = "",
   ...props
 }) {
-  const words = text.split(" ").map((word) => word + " ");
+  const segmenter = new Intl.Segmenter("th", { granularity: "word" });
+  const words = [...segmenter.segment(text)].map((seg) => seg.segment);
+
+  const staggerDelay = words.length > 1 ? duration / (words.length - 1) : 0;
 
   return (
     <Tag
@@ -22,12 +24,17 @@ export default function StaggeredText({
     >
       {words.map((word, index) => (
         <motion.span
+          key={index}
           aria-hidden="true"
           initial={{ filter: "blur(8px)", opacity: 0, y: 16 }}
           animate={{ filter: "blur(0)", opacity: 1, y: 0 }}
-          transition={{ duration, delay: initialDelay + index * delay }}
-          key={index}
-          className={`inline-block ${highlightWords.includes(word.trim()) ? highlightClassName : ""}`}
+          transition={{
+            duration: 0.3,
+            delay: initialDelay + index * staggerDelay,
+          }}
+          className={`inline-block ${
+            highlightWords.includes(word.trim()) ? highlightClassName : ""
+          }`}
           style={{ whiteSpace: "pre" }}
         >
           {word}
