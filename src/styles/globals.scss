@@ -13,6 +13,7 @@
 
 // Component styles
 @use "ui/button" as ui;
+@use "ui/capsule" as capsule;
 
 body {
     font-size: var(--text-body);

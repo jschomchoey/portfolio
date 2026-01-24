@@ -1,0 +1,26 @@
+.capsule {
+    border-radius: 1000px;
+    padding: 0.25rem 0.75rem;
+    color: var(--color-primary);
+    font-size: var(--text-small);
+
+    &-primary {
+        background-color: var(--color-primary);
+        border: 2px solid var(--color-primary);
+        color: white;
+    }
+
+    &-secondary {
+        background-color: var(--color-secondary);
+        border: 2px solid var(--color-secondary);
+        color: white;
+    }
+
+    &-outline {
+        background-color: white;
+        border: 2px solid var(--color-primary-light);
+        border-radius: 1000px;
+        padding: 0.25rem 0.75rem;
+        color: var(--color-primary);
+    }
+}
