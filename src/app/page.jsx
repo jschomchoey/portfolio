@@ -1,14 +1,14 @@
 import Image from "next/image";
-import { motion } from "motion/react";
 import { use } from "react";
+
+import HeroSection from "@/components/sections/hero/hero";
+import PostsSection from "@/components/sections/posts/posts.server";
 
 export default function Home() {
   return (
-    <div>
-      <p>
-        Bridging beautiful design and powerful performance to create websites
-        that truly matter.
-      </p>
+    <div className="relative">
+      <HeroSection />
+      {/* <PostsSection /> */}
     </div>
   );
 }
