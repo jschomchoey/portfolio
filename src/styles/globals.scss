@@ -1,0 +1,11 @@
+@use "tailwindcss" as tailwind;
+
+// Base styles
+@use "base/typography" as typography;
+@use "base/variables" as variable;
+
+// Layout styles
+@use "layout/footer" as footer;
+
+// Component styles
+@use "ui/button" as ui;
