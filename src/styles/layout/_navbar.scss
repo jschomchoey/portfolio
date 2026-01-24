@@ -16,8 +16,9 @@
         }
 
         .active {
-            background-color: white;
-            border-radius: 1000px;
+            transition: all 0.3s ease;
+            // background-color: white; 
+            // border-radius: 1000px;
             color: black;
         }
     }
