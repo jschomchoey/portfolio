@@ -1,0 +1,14 @@
+.hero-section {
+    background-color: var(--bg-primary);
+    background-image: repeating-linear-gradient(rgba(10, 102, 194, 0.1) 0%,
+            rgba(10, 102, 194, 0.1) 1px,
+            transparent 1px,
+            transparent 50%),
+        repeating-linear-gradient(90deg,
+            rgba(10, 102, 194, 0.1) 0%,
+            rgba(10, 102, 194, 0.1) 1px,
+            transparent 1px,
+            transparent 50%);
+    background-size: 150px 150px;
+    background-position: center;
+}

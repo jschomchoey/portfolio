@@ -6,6 +6,27 @@
 
 // Layout styles
 @use "layout/footer" as footer;
+@use "layout/navbar" as navbar;
+
+// Section styles
+@use "sections/hero" as hero;
 
 // Component styles
 @use "ui/button" as ui;
+
+body {
+    font-size: var(--text-body);
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+    transition: background-color 0.3s, color 0.3s;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
