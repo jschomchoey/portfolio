@@ -3,6 +3,7 @@ import "../styles/globals.scss";
 
 import Navbar from "../components/layout/navbar";
 import Footer from "../components/layout/footer";
+import ThemeProvider from "../components/theme-provider";
 
 export const metadata = {
   title: "T1ramisu Portfolio",
@@ -14,11 +15,14 @@ export default function RootLayout({ children }) {
     <html
       lang="en"
       className={`${fontSans.variable} ${fontSerif.variable} ${fontMono.variable}`}
+      suppressHydrationWarning
     >
       <body>
-        {<Navbar />}
-        <main>{children}</main>
-        {<Footer />}
+        <ThemeProvider>
+          {<Navbar />}
+          <main>{children}</main>
+          {<Footer />}
+        </ThemeProvider>
       </body>
     </html>
   );
