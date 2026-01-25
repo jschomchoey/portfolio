@@ -10,6 +10,8 @@
 
 // Section styles
 @use "sections/hero" as hero;
+@use "sections/post" as post;
+@use "sections/quote" as quote;
 
 // Component styles
 @use "ui/button" as ui;
@@ -19,7 +21,7 @@ body {
     font-size: var(--text-body);
     background-color: var(--bg-primary);
     color: var(--text-primary);
-    transition: background-color 0.3s, color 0.3s;
+    transition: background-color 0.3s, color 0.2s;
 }
 
 @keyframes fadeIn {
