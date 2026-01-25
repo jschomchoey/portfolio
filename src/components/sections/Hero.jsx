@@ -10,7 +10,7 @@ import { Mail } from "lucide-react";
 
 export default function Hero() {
   return (
-    <div className="hero-section h-dvh px-5 flex flex-col justify-center items-center">
+    <div className="hero-section h-dvh min-h-[700px] px-5 flex flex-col justify-center items-center">
       <div className="h-[82px]"></div>
       <FadeUp className="mb-7" delay={0} duration={1} replay={false}>
         <Capsule variant="outline">Frontend Developer</Capsule>
