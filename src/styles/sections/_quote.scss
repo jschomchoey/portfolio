@@ -1,0 +1,13 @@
+.quote-section {
+    background-color: var(--bg-secondary);
+
+    .icon-wrapper {
+        background-color: var(--color-primary);
+        padding: 0.5rem;
+        border-radius: 1rem;
+
+        svg {
+            color: White;
+        }
+    }
+}
