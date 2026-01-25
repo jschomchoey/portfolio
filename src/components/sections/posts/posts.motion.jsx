@@ -1,22 +1,25 @@
 "use client";
 
-import FeaturedPostCard from "./FeaturedPostCard.jsx";
-import PostCard from "./PostCard.jsx";
-import FadeUp from "@/components/animation/FadeUp";
+import FeaturedPostCard from "@/components/sections/posts/FeaturedPostCard.jsx";
+import PostCard from "@/components/sections/posts/PostCard.jsx";
+
 import Capsule from "@/components/ui/Capsule";
 
-import StaggerContainer from "../../animation/StaggerContainer";
-import StaggerItem from "../../animation/StaggerItem";
+import FadeUp from "@/components/animation/FadeUp";
+import StaggerContainer from "@/components/animation/StaggerContainer";
+import StaggerItem from "@/components/animation/StaggerItem";
 
 export default function PostsMotion({ posts }) {
   return (
     <div className="posts-wrapper">
-      <FadeUp className="mb-5">
-        <Capsule variant="outline">Frontend Developer</Capsule>
-      </FadeUp>
-      <FadeUp className="mb-10">
-        <h2 className="text-center">Welcome to my area</h2>
-      </FadeUp>
+      <div className="flex flex-col items-center mb-10">
+        <FadeUp className="mb-5">
+          <Capsule variant="outline">Blog</Capsule>
+        </FadeUp>
+        <FadeUp>
+          <h2 className="text-center">Welcome to my area</h2>
+        </FadeUp>
+      </div>
       <StaggerContainer stagger={0.1} delay={0.2}>
         <div className="posts-grid">
           {posts.map((post, index) => (

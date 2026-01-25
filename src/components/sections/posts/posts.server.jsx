@@ -1,4 +1,4 @@
-import PostsMotion from "./posts.motion";
+import PostsMotion from "@/components/sections/posts/posts.motion";
 
 export default async function PostsSection() {
   // const res = await fetch(

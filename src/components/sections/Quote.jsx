@@ -1,8 +1,8 @@
 import { Sparkles, Award, ThumbsUp } from "lucide-react";
 import FadeUp from "@/components/animation/FadeUp";
 import Capsule from "@/components/ui/Capsule";
-import StaggerContainer from "../animation/StaggerContainer";
-import StaggerItem from "../animation/StaggerItem";
+import StaggerContainer from "@/components/animation/StaggerContainer";
+import StaggerItem from "@/components/animation/StaggerItem";
 
 const quotes = [
   {
@@ -27,13 +27,15 @@ const quotes = [
 
 export default function Quote() {
   return (
-    <section className="quote-section py-15 flex flex-col items-center">
-      <FadeUp className="mb-5">
-        <Capsule variant="outline">Quote</Capsule>
-      </FadeUp>
-      <FadeUp className="mb-10">
-        <h2 className="text-center">What I Focus On?</h2>
-      </FadeUp>
+    <section className="quote-section py-15">
+      <div className="flex flex-col items-center mb-10">
+        <FadeUp className="mb-5">
+          <Capsule variant="outline">Quote</Capsule>
+        </FadeUp>
+        <FadeUp>
+          <h2 className="text-center">What i focus on?</h2>
+        </FadeUp>
+      </div>
       <StaggerContainer stagger={0.1} delay={0.2}>
         <div className=" flex flex-col md:flex-row  gap-10 px-10">
           {quotes.map((item, index) => {
