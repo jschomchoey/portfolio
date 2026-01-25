@@ -32,7 +32,7 @@ export default function Hero() {
         >
           <Image
             src="/images/profile.webp"
-            alt="Rocket"
+            alt="t1ramisu profile"
             width={70}
             height={70}
             className="profile"
