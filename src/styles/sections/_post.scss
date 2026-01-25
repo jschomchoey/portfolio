@@ -25,6 +25,7 @@
 
     img {
         border-radius: 20px 20px 0 0;
+        z-index: 0;
     }
 
     /* ---------- Content ---------- */
@@ -37,6 +38,7 @@
         display: flex;
         flex-direction: column;
         flex: 1;
+        z-index: 1;
 
         .header {
             font-size: var(--text-h5);
@@ -66,7 +68,7 @@
 
             .date {
                 font-size: var(--text-small);
-                color: var(--text-muted);
+                color: var(--text-secondary);
             }
         }
     }
@@ -112,6 +114,14 @@
     .posts-section {
         .posts-grid {
             grid-template-columns: 1fr;
+        }
+    }
+}
+
+[data-theme="dark"] {
+    .post-card {
+        img {
+            filter: brightness(85%);
         }
     }
 }

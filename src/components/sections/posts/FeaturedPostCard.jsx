@@ -15,7 +15,7 @@ export default function FeaturedPostCard({ post }) {
           <span className="date">{post.date}</span>
 
           <Button
-            href={`/blog/${post.id}`}
+            href={`/blog/${post.slug}`}
             variant="primary"
             size="sm"
             icon={<ChevronRight />}
