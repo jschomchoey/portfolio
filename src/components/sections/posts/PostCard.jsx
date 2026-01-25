@@ -9,10 +9,10 @@ export default function PostCard({ post }) {
 
       <div className="post-content">
         <h3 className="header">{post.title}</h3>
-        <p className="description mb-5">{post.body}</p>
+        <p className="description mb-5">{post.description}</p>
 
         <div className="post-footer">
-          <span className="date">08 Jan 2026</span>
+          <span className="date">{post.date}</span>
 
           <Button
             href={`/blog/${post.id}`}

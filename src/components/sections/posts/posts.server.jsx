@@ -14,28 +14,43 @@ export default async function PostsSection() {
     {
       userId: 1,
       id: 1,
-      title: "Dealing with Framer Motion in Next.js 13",
-      body: "เป็นอะไรที่น่าสนใจมากเมื่อได้ลองใช้ Framer Motion ร่วมกับ Next.js 13 ทำให้การคงคุณสมบัติของ Server Side Rendering (SSR) ยังคงอยู่ได้อย่างดี",
+      slug: "framer-motion-with-nextjs-13",
+      image: "/images/posts/framer-motion-with-nextjs-13.webp",
+      title: "เมื่อ Framer Motion ต้องการ Client Component ร่วมกับ Next.js 13",
+      description:
+        "เลือกใช้ Next.js เพื่อจะใช้ประโยชน์จาก Server Component แต่ Framer Motion ดันต้องการ Client Component ในการทำ Animation จะทำอย่างไรดี?",
+      body: "เลือกใช้ Next.js เพื่อจะใช้ประโยชน์จาก Server Component แต่ Framer Motion ดันต้องการ Client Component ในการทำ Animation จะทำอย่างไรดี?",
+      date: "08 Jan 2026",
     },
     {
       userId: 1,
       id: 2,
-      title: "qui est esse",
+      slug: "internship-review-clicknext",
+      image: "/images/posts/internship-review-clicknext.webp",
+      title: "รีวิวฝึกงานที่ ClickNext - Frontend Developer",
+      description:
+        "ประสบการณ์การฝึกงานที่ ClickNext ในตำแหน่ง Frontend Developer ประสบการณ์ไม่มีวันลืม เป็นอย่างไร มีอะไรได้เรียนรู้บ้าง มาดูกัน!",
       body:
         "est rerum tempore vitae\n" +
         "sequi sint nihil reprehenderit dolor beatae ea dolores neque\n" +
         "fugiat blanditiis voluptate porro vel nihil molestiae ut reiciendis\n" +
         "qui aperiam non debitis possimus qui neque nisi nulla",
+      date: "08 Jan 2026",
     },
     {
       userId: 1,
       id: 3,
+      image: "/images/posts/jsonplaceholder-fake-online-rest-api.webp",
+      slug: "jsonplaceholder-fake-online-rest-api",
       title: "ea molestias quasi exercitationem repellat qui ipsa sit aut",
+      description:
+        "เลือกใช้ Next.js เพื่อจะใช้ประโยชน์จาก Server Component แต่ Framer Motion ดันต้องการ Client Component ในการทำ Animation จะทำอย่างไรดี?",
       body:
         "et iusto sed quo iure\n" +
         "voluptatem occaecati omnis eligendi aut ad\n" +
         "voluptatem doloribus vel accusantium quis pariatur\n" +
         "molestiae porro eius odio et labore et velit aut",
+      date: "08 Jan 2026",
     },
   ];
 
