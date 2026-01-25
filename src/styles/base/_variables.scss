@@ -2,6 +2,7 @@
     --color-primary: #4285f4;
     --color-primary-light: #c8ddff;
     --color-secondary: #83b2ff;
+    --color-gray: #F8F8F8;
     --color-gray-dark: #5a5b5d;
 
     --color-success: #34a853;
@@ -9,8 +10,8 @@
     --color-error: #ea4335;
     --color-info: var(--color-primary);
 
-    --bg-primary: #ffffff;
-    --bg-secondary: #f6f9ff;
+    --bg-primary: #e9f2ff;
+    --bg-secondary: #ffffff;
     --text-primary: #000000;
     --text-secondary: #333333;
     --text-gray: var(--color-gray-dark);
@@ -26,7 +27,7 @@
 
     --text-h1-line-height: 3.5rem;
     --text-h2-line-height: 3rem;
-    --text-h3-line-height: 2.75rem;
+    --text-h3-line-height: 1.875rem;
     --text-h4-line-height: 2.5rem;
     --text-h5-line-height: 2rem;
     --text-h6-line-height: 1.625rem;
@@ -45,7 +46,7 @@
 
         --text-h1-line-height: 3rem;
         --text-h2-line-height: 2.75rem;
-        --text-h3-line-height: 2.5rem;
+        --text-h3-line-height: 1.75rem;
         --text-h4-line-height: 2.25rem;
         --text-h5-line-height: 1.875rem;
         --text-h6-line-height: 1.5rem;
@@ -63,7 +64,7 @@
         --text-body: 0.875rem;
         --text-small: 0.75rem;
 
-        --text-h1-line-height: 2.75rem;
+        --text-h1-line-height: 2.5rem;
         --text-h2-line-height: 2.25rem;
         --text-h3-line-height: 2rem;
         --text-h4-line-height: 1.75rem;
@@ -117,10 +118,11 @@ p {
     --color-primary: #2563eb;
     --color-primary-light: #1f3a8a;
     --color-secondary: #83b2ff;
+    --color-gray: #272727;
     --color-gray-dark: #e5e7eb;
 
     --bg-primary: #202020;
-    --bg-secondary: #222222;
-    --text-primary: #ffffff;
+    --bg-secondary: #2b2b2b;
+    --text-primary: #dddddd;
     --text-secondary: #bbbbbb;
 }
