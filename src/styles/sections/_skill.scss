@@ -1,0 +1,40 @@
+.skill-section {
+    background-color: var(--bg-secondary);
+
+    .skill-item {
+        padding: 1rem;
+        background-color: var(--color-gray);
+        border-radius: 30px;
+        width: 150px;
+        height: 150px;
+
+        .skill-image {
+            height: 50px;
+            width: auto;
+        }
+    }
+
+    @media (max-width: 1024px) {
+        .skill-item {
+            width: 120px;
+            height: 120px;
+            border-radius: 25px;
+
+            .skill-image {
+                height: 40px;
+            }
+        }
+    }
+
+    @media (max-width: 640px) {
+        .skill-item {
+            width: 100px;
+            height: 100px;
+            border-radius: 20px;
+
+            .skill-image {
+                height: 30px;
+            }
+        }
+    }
+}
