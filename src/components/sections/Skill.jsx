@@ -51,6 +51,10 @@ const skills = [
     image: "/images/skills/tailwind.svg",
   },
   {
+    name: "MySQL",
+    image: "/images/skills/mysql.png",
+  },
+  {
     name: "Git",
     image: "/images/skills/git.png",
   },
