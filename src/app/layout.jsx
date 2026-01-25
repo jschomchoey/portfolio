@@ -1,13 +1,14 @@
 import { fontSans, fontSerif, fontMono } from "./fonts";
 import "../styles/globals.scss";
 
-import Navbar from "../components/layout/navbar";
-import Footer from "../components/layout/footer";
+import Navbar from "../components/layout/Navbar";
+import Footer from "../components/layout/Footer";
 import ThemeProvider from "../components/theme-provider";
 
 export const metadata = {
-  title: "T1ramisu Portfolio",
-  description: "A portfolio website showcasing my projects and skills.",
+  title: "T1ramisu",
+  description:
+    "Bridging beautiful design and powerful performance to create websites that truly matter.",
 };
 
 export default function RootLayout({ children }) {
