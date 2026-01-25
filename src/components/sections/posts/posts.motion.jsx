@@ -14,7 +14,7 @@ export default function PostsMotion({ posts }) {
       <FadeUp className="mb-5">
         <Capsule variant="outline">Frontend Developer</Capsule>
       </FadeUp>
-      <FadeUp className="mb-5">
+      <FadeUp className="mb-10">
         <h2 className="text-center">Welcome to my area</h2>
       </FadeUp>
       <StaggerContainer stagger={0.1} delay={0.2}>

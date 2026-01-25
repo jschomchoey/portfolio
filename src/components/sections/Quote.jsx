@@ -1,4 +1,6 @@
 import { Sparkles, Award, ThumbsUp } from "lucide-react";
+import FadeUp from "@/components/animation/FadeUp";
+import Capsule from "@/components/ui/Capsule";
 import StaggerContainer from "../animation/StaggerContainer";
 import StaggerItem from "../animation/StaggerItem";
 
@@ -25,9 +27,15 @@ const quotes = [
 
 export default function Quote() {
   return (
-    <section className="quote-section">
+    <section className="quote-section py-15 flex flex-col items-center">
+      <FadeUp className="mb-5">
+        <Capsule variant="outline">Quote</Capsule>
+      </FadeUp>
+      <FadeUp className="mb-10">
+        <h2 className="text-center">What I Focus On?</h2>
+      </FadeUp>
       <StaggerContainer stagger={0.1} delay={0.2}>
-        <div className=" flex flex-col md:flex-row py-15 gap-10 px-10">
+        <div className=" flex flex-col md:flex-row  gap-10 px-10">
           {quotes.map((item, index) => {
             const Icon = item.icon;
 
@@ -37,7 +45,7 @@ export default function Quote() {
                   <div className="icon-wrapper w-12 h-12 flex items-center justify-center mb-5">
                     <Icon />
                   </div>
-                  <h2 className="mb-3 ">{item.title}</h2>
+                  <h3 className="mb-3 ">{item.title}</h3>
                   <p>{item.description}</p>
                 </div>
               </StaggerItem>
