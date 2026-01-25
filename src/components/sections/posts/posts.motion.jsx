@@ -15,7 +15,7 @@ export default function PostsMotion({ posts }) {
         <Capsule variant="outline">Frontend Developer</Capsule>
       </FadeUp>
       <FadeUp className="mb-5">
-        <h2 className="mb-5">Welcome to my area</h2>
+        <h2>Welcome to my area</h2>
       </FadeUp>
       <StaggerContainer stagger={0.1} delay={0.2}>
         <div className="posts-grid">
