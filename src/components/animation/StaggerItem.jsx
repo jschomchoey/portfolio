@@ -1,7 +1,7 @@
 "use client";
 import { motion } from "motion/react";
 
-export default function StaggerItem({ children }) {
+export default function StaggerItem({ children, duration = 0.5 }) {
   return (
     <motion.div
       variants={{
@@ -10,7 +10,7 @@ export default function StaggerItem({ children }) {
           opacity: 1,
           y: 0,
           transition: {
-            duration: 0.5,
+            duration: duration,
             ease: [0.22, 1, 0.36, 1],
           },
         },
