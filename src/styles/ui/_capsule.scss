@@ -17,10 +17,10 @@
     }
 
     &-outline {
-        background-color: white;
+        background-color: var(--bg-secondary);
         border: 2px solid var(--color-primary-light);
         border-radius: 1000px;
         padding: 0.25rem 0.75rem;
-        color: var(--color-primary);
+        color: var(--color-capsule);
     }
 }
