@@ -1,0 +1,103 @@
+.posts-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 4rem 1rem;
+
+    .posts-grid {
+        display: grid;
+        grid-template-columns: 1.6fr 1fr 1fr;
+        gap: 15px;
+        align-items: stretch;
+        width: 100%;
+        max-width: 1200px;
+    }
+}
+
+/* ---------- Card Base ---------- */
+.post-card {
+    height: 100%;
+    background-color: var(--bg-secondary);
+    padding: 16px;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+
+    img {
+        border-radius: 20px 20px 0 0;
+    }
+
+    /* ---------- Content ---------- */
+    .post-content {
+        background-color: var(--color-gray);
+        border-radius: 20px;
+        padding: 1rem;
+        margin-top: -1.5rem;
+
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+
+        .header {
+            font-size: var(--text-h5);
+            margin-bottom: 0.5rem;
+
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
+
+        .description {
+            color: var(--text-secondary);
+
+            display: -webkit-box;
+            -webkit-line-clamp: 4;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
+
+        /* ---------- Footer ---------- */
+        .post-footer {
+            margin-top: auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            .date {
+                font-size: var(--text-small);
+                color: var(--text-muted);
+            }
+        }
+    }
+
+    /* ---------- Featured Modifier ---------- */
+    &.post-card-featured {
+        .post-content {
+            .header {
+                -webkit-line-clamp: 1;
+            }
+
+            .description {
+                -webkit-line-clamp: 2;
+            }
+        }
+    }
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 1024px) {
+    .posts-section {
+        .posts-grid {
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+}
+
+@media (max-width: 640px) {
+    .posts-section {
+        .posts-grid {
+            grid-template-columns: 1fr;
+        }
+    }
+}
