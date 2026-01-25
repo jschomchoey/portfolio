@@ -55,7 +55,7 @@ export default async function PostsSection() {
   ];
 
   return (
-    <section>
+    <section className="posts-section">
       <PostsMotion posts={posts} />
     </section>
   );

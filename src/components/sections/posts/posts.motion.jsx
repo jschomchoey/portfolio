@@ -10,12 +10,12 @@ import StaggerItem from "../../animation/StaggerItem";
 
 export default function PostsMotion({ posts }) {
   return (
-    <section className="posts-section">
+    <div className="posts-wrapper">
       <FadeUp className="mb-5">
         <Capsule variant="outline">Frontend Developer</Capsule>
       </FadeUp>
       <FadeUp className="mb-5">
-        <h2>Welcome to my area</h2>
+        <h2 className="text-center">Welcome to my area</h2>
       </FadeUp>
       <StaggerContainer stagger={0.1} delay={0.2}>
         <div className="posts-grid">
@@ -30,6 +30,6 @@ export default function PostsMotion({ posts }) {
           ))}
         </div>
       </StaggerContainer>
-    </section>
+    </div>
   );
 }

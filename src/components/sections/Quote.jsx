@@ -25,24 +25,26 @@ const quotes = [
 
 export default function Quote() {
   return (
-    <StaggerContainer stagger={0.1} delay={0.2}>
-      <div className="quote-section flex flex-col md:flex-row py-15 gap-10 px-10">
-        {quotes.map((item, index) => {
-          const Icon = item.icon;
+    <section className="quote-section">
+      <StaggerContainer stagger={0.1} delay={0.2}>
+        <div className=" flex flex-col md:flex-row py-15 gap-10 px-10">
+          {quotes.map((item, index) => {
+            const Icon = item.icon;
 
-          return (
-            <StaggerItem duration={1} key={index}>
-              <div className="flex flex-col items-center justify-center text-center">
-                <div className="icon-wrapper w-12 h-12 flex items-center justify-center mb-5">
-                  <Icon />
+            return (
+              <StaggerItem duration={1} key={index}>
+                <div className="flex flex-col items-center justify-center text-center">
+                  <div className="icon-wrapper w-12 h-12 flex items-center justify-center mb-5">
+                    <Icon />
+                  </div>
+                  <h2 className="mb-3 ">{item.title}</h2>
+                  <p>{item.description}</p>
                 </div>
-                <h2 className="mb-3 ">{item.title}</h2>
-                <p>{item.description}</p>
-              </div>
-            </StaggerItem>
-          );
-        })}
-      </div>
-    </StaggerContainer>
+              </StaggerItem>
+            );
+          })}
+        </div>
+      </StaggerContainer>
+    </section>
   );
 }
