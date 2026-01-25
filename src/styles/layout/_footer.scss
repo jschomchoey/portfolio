@@ -1,0 +1,44 @@
+.footer-wrapper {
+    padding: 4rem;
+    background-color: var(--bg-secondary);
+    border-radius: 50px 50px 0 0;
+
+    .logo-text {
+        font-size: var(--text-h4);
+        font-weight: bold;
+        color: var(--color-primary);
+    }
+
+    img {
+        height: 30px;
+        width: 30px;
+    }
+
+    .foot-hr {
+        border: none;
+        border-top: 2px solid var(--color-gray);
+    }
+
+    .GitHub {
+        background-color: white;
+        border-radius: 1000px;
+    }
+
+    .LinkedIn {
+        background-color: white;
+        border-radius: 5px;
+    }
+
+    @media (max-width: 1024px) {
+        padding: 3rem;
+    }
+
+    @media (max-width: 640px) {
+        padding: 2rem;
+
+        img {
+            height: 25px;
+            width: 25px;
+        }
+    }
+}
