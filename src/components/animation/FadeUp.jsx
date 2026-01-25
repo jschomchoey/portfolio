@@ -6,15 +6,16 @@ export default function FadeUp({
   delay = 0,
   className = "",
   duration = 1,
+  replay = true,
 }) {
   return (
     <motion.div
       className={className}
       initial={{ opacity: 0, y: 20 }}
       whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true }}
+      viewport={{ once: !replay }}
       transition={{
-        duration: duration,
+        duration,
         delay,
         ease: [0.22, 1, 0.36, 1],
       }}
