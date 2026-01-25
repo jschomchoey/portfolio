@@ -42,7 +42,7 @@ export default function Hero() {
           delay={0.7}
           angle={100}
           distance={100}
-          className="absolute bottom-[24px] lg:top-[40px] right-[6px] lg:right-[-110px] rotate-12"
+          className="absolute top-[-40px] lg:top-[40px] right-[-15px] lg:right-[-110px] rotate-12"
         >
           <Capsule variant="primary">SEO Too!</Capsule>
         </FadeDirectional>
