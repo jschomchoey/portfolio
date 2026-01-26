@@ -2,7 +2,7 @@ import PostsMotion from "@/components/sections/posts/posts.motion";
 
 export default async function PostsSection() {
   // const res = await fetch(
-  //   "https://jsonplaceholder.typicode.com/posts?_page=1&_limit=3",
+  //   "https://enpoint.here",
   //   {
   //     next: { revalidate: 60 },
   //   },
@@ -26,7 +26,7 @@ export default async function PostsSection() {
       userId: 1,
       id: 2,
       slug: "internship-review-clicknext",
-      image: "/images/posts/internship-review-clicknext.webp",
+      image: "/images/posts/clicknext_logo.jpg",
       title: "รีวิวฝึกงานที่ ClickNext - Frontend Developer",
       description:
         "ประสบการณ์การฝึกงานที่ ClickNext ในตำแหน่ง Frontend Developer ประสบการณ์ไม่มีวันลืม เป็นอย่างไร มีอะไรได้เรียนรู้บ้าง มาดูกัน!",
