@@ -19,6 +19,7 @@ export default function PostCard({ post }) {
             variant="primary"
             size="sm"
             icon={<ChevronRight />}
+            ariaLabel={`Read more about ${post.title}`}
           >
             Read More
           </Button>

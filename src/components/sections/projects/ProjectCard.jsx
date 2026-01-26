@@ -24,6 +24,7 @@ export default function ProjectCard({ project }) {
             variant="primary"
             size="sm"
             icon={<ChevronRight />}
+            ariaLabel={`Read more about ${project.title}`}
           >
             Read More
           </Button>
