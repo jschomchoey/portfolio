@@ -21,6 +21,7 @@ export default function StaggerContainer({
           },
         },
       }}
+      className="stagger-container"
     >
       {children}
     </motion.div>
