@@ -55,7 +55,7 @@ export default function Navbar() {
             </li>
           );
         })}
-        <ThemeToggle />
+        {/* <ThemeToggle /> */}
       </ul>
     </motion.nav>
   );

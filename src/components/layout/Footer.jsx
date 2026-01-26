@@ -30,7 +30,7 @@ export default function Footer() {
   return (
     <footer>
       <div className="footer-wrapper">
-        <div className="flex justify-between">
+        <div className="flex justify-between gap-3">
           <div>
             <a href="/">
               <p className="logo-text mb-7">T1ramisu.dev</p>
