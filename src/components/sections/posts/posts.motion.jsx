@@ -11,7 +11,7 @@ import StaggerItem from "@/components/animation/StaggerItem";
 
 export default function PostsMotion({ posts }) {
   return (
-    <div className="posts-wrapper">
+    <div className="posts-wrapper py-15 px-4 max-w-7xl mx-auto">
       <div className="flex flex-col items-center mb-10">
         <FadeUp className="mb-5">
           <Capsule variant="outline">Blog</Capsule>
@@ -21,7 +21,7 @@ export default function PostsMotion({ posts }) {
         </FadeUp>
       </div>
       <StaggerContainer stagger={0.1} delay={0.2}>
-        <div className="posts-grid">
+        <div className="posts-grid max-w-7xl">
           {posts.map((post, index) => (
             <StaggerItem key={post.id} duration={1}>
               {index === 0 ? (

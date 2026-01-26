@@ -27,34 +27,36 @@ const quotes = [
 
 export default function Quote() {
   return (
-    <section className="quote-section py-15">
-      <div className="flex flex-col items-center mb-10">
-        <FadeUp className="mb-5">
-          <Capsule variant="outline">Quote</Capsule>
-        </FadeUp>
-        <FadeUp>
-          <h2 className="text-center">What i focus on?</h2>
-        </FadeUp>
-      </div>
-      <StaggerContainer stagger={0.1} delay={0.2}>
-        <div className=" flex flex-col md:flex-row  gap-10 px-10">
-          {quotes.map((item, index) => {
-            const Icon = item.icon;
-
-            return (
-              <StaggerItem duration={1} key={index}>
-                <div className="flex flex-col items-center justify-center text-center">
-                  <div className="icon-wrapper w-12 h-12 flex items-center justify-center mb-5">
-                    <Icon />
-                  </div>
-                  <h3 className="mb-3 ">{item.title}</h3>
-                  <p>{item.description}</p>
-                </div>
-              </StaggerItem>
-            );
-          })}
+    <section className="quote-section">
+      <div className="wrapper py-15 px-4 max-w-7xl mx-auto">
+        <div className="flex flex-col items-center mb-10">
+          <FadeUp className="mb-5">
+            <Capsule variant="outline">Quote</Capsule>
+          </FadeUp>
+          <FadeUp>
+            <h2 className="text-center">What i focus on?</h2>
+          </FadeUp>
         </div>
-      </StaggerContainer>
+        <StaggerContainer stagger={0.1} delay={0.2}>
+          <div className=" flex flex-col md:flex-row gap-10">
+            {quotes.map((item, index) => {
+              const Icon = item.icon;
+
+              return (
+                <StaggerItem duration={1} key={index}>
+                  <div className="flex flex-col items-center justify-center text-center">
+                    <div className="icon-wrapper w-12 h-12 flex items-center justify-center mb-5">
+                      <Icon />
+                    </div>
+                    <h3 className="mb-3 ">{item.title}</h3>
+                    <p>{item.description}</p>
+                  </div>
+                </StaggerItem>
+              );
+            })}
+          </div>
+        </StaggerContainer>
+      </div>
     </section>
   );
 }

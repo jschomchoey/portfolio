@@ -62,38 +62,40 @@ const skills = [
 
 export default function Skill() {
   return (
-    <section className="skill-section py-15 flex flex-col items-center">
-      <div className="flex flex-col items-center mb-10">
-        <FadeUp className="mb-5">
-          <Capsule variant="outline">Skill</Capsule>
-        </FadeUp>
-        <FadeUp>
-          <h2 className="text-center">My Skills</h2>
-        </FadeUp>
-      </div>
-      <StaggerContainer stagger={0.05} delay={0.2}>
-        <div className="flex flex-wrap justify-center gap-5 max-w-7xl px-4">
-          {skills.map((item, index) => {
-            return (
-              <StaggerItem duration={1} key={index}>
-                <div
-                  key={index}
-                  className="skill-item flex flex-col items-center justify-center"
-                >
-                  <Image
-                    src={item.image}
-                    alt={item.name}
-                    width={70}
-                    height={70}
-                    className="skill-image mb-3"
-                  />
-                  <p>{item.name}</p>
-                </div>
-              </StaggerItem>
-            );
-          })}
+    <section className="skill-section">
+      <div className="wrapper py-15 px-4 max-w-7xl mx-auto">
+        <div className="flex flex-col items-center mb-10">
+          <FadeUp className="mb-5">
+            <Capsule variant="outline">Skill</Capsule>
+          </FadeUp>
+          <FadeUp>
+            <h2 className="text-center">My Skills</h2>
+          </FadeUp>
         </div>
-      </StaggerContainer>
+        <StaggerContainer stagger={0.05} delay={0.2}>
+          <div className="flex flex-wrap justify-center gap-5">
+            {skills.map((item, index) => {
+              return (
+                <StaggerItem duration={1} key={index}>
+                  <div
+                    key={index}
+                    className="skill-item flex flex-col items-center justify-center"
+                  >
+                    <Image
+                      src={item.image}
+                      alt={item.name}
+                      width={70}
+                      height={70}
+                      className="skill-image mb-3"
+                    />
+                    <p>{item.name}</p>
+                  </div>
+                </StaggerItem>
+              );
+            })}
+          </div>
+        </StaggerContainer>
+      </div>
     </section>
   );
 }
