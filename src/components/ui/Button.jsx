@@ -7,6 +7,7 @@ export default function Button({
   icon = null,
   href,
   type = "button",
+  ariaLabel,
   ...props
 }) {
   const baseClasses = "btn inline-flex items-center justify-center";
@@ -25,7 +26,8 @@ export default function Button({
 
   if (href) {
     return (
-      <Link href={href} className={className} {...props}>
+      <Link href={href} className={className} aria-label={ariaLabel} {...props}>
+        <span className="sr-only">{ariaLabel}</span>
         {icon && <span className="btn-icon">{icon}</span>}
         {children}
       </Link>
