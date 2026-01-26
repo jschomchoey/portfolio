@@ -52,6 +52,21 @@ export default async function ProjectsSection() {
         "molestiae porro eius odio et labore et velit aut",
       date: "08 Jan 2026",
     },
+    {
+      userId: 1,
+      id: 4,
+      image: "/images/projects/jsonplaceholder-fake-online-rest-api.webp",
+      slug: "crossboot-windows-bootable-usb-creator-on-macos",
+      title: "CrossBoot - Windows Bootable USB Creator on macOS",
+      description:
+        "Architected a macOS utility that simplifies creating Windows bootable USBs with Legacy BIOS, UEFI, and Secure Boot support, featuring automatic WIM splitting and Windows 11 bypass capabilities.",
+      body:
+        "et iusto sed quo iure\n" +
+        "voluptatem occaecati omnis eligendi aut ad\n" +
+        "voluptatem doloribus vel accusantium quis pariatur\n" +
+        "molestiae porro eius odio et labore et velit aut",
+      date: "08 Jan 2026",
+    },
   ];
 
   return (

@@ -12,9 +12,11 @@ export default function ProjectCard({ project }) {
         alt={project.title}
       />
 
-      <div className="project-content">
-        <h3 className="header">{project.title}</h3>
-        <p className="description mb-5">{project.description}</p>
+      <div className="project-content flex flex-col justify-between flex-1">
+        <div className="">
+          <h3 className="header">{project.title}</h3>
+          <p className="description mb-5">{project.description}</p>
+        </div>
 
         <div className="project-footer">
           <span className="date">{project.date}</span>
