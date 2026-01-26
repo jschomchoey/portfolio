@@ -6,7 +6,7 @@ export default function FadeUp({
   delay = 0,
   className = "",
   duration = 1,
-  replay = true,
+  replay = false,
 }) {
   return (
     <motion.div

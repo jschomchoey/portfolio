@@ -5,12 +5,13 @@ export default function StaggerContainer({
   children,
   stagger = 0.1,
   delay = 0,
+  replay = false,
 }) {
   return (
     <motion.div
       initial="hidden"
       whileInView="show"
-      viewport={{ once: false, amount: 0.1 }}
+      viewport={{ once: !replay, amount: 0.1 }}
       variants={{
         hidden: {},
         show: {
