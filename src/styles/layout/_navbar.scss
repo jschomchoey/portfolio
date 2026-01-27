@@ -1,25 +1,21 @@
 .navbar {
-    top: 1rem;
-    left: 50%;
     background-color: black;
     color: white;
-    border-radius: 1000px;
-    overflow: hidden;
+    border-radius: 999px;
+    padding: 5px;
     box-shadow: 0 3px 15px rgba(255, 255, 255, 0.05);
+    display: flex;
+    align-items: center;
 
     .nav-list {
         gap: 0.5rem;
-        padding: 5px;
 
-        .nav-item {
-            padding: 0.5rem 1rem;
+        li {
             cursor: pointer;
+            border-radius: 999px;
         }
 
         .active {
-            transition: all 0.3s ease;
-            // background-color: white; 
-            // border-radius: 1000px;
             color: black;
         }
     }
