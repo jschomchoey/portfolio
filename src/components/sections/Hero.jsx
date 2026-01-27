@@ -98,6 +98,7 @@ export default function Hero() {
           <Button
             href={`/files/documents/Resume.pdf`}
             target="_blank"
+            isFile={true}
             variant="outline"
             size="md"
             icon={<FileText />}
