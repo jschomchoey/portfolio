@@ -13,7 +13,7 @@ const socialMedia = [
   },
   {
     name: "LinkedIn",
-    url: "https://linkedin.com/in/jschomchoey",
+    url: "https://www.linkedin.com/in/teerapat-chomchoei-4b2363396",
     icon: "/images/social/linkedin.svg",
   },
 ];
