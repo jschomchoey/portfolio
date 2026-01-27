@@ -96,7 +96,7 @@ export default function Hero() {
           </div>
 
           <Button
-            href={`files/documents/resume.pdf`}
+            href={`/files/documents/Resume.pdf`}
             target="_blank"
             variant="outline"
             size="md"
