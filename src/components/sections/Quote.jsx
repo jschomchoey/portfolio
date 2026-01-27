@@ -38,13 +38,13 @@ export default function Quote() {
           </FadeUp>
         </div>
         <StaggerContainer stagger={0.1} delay={0.2}>
-          <div className=" flex flex-col md:flex-row gap-10">
+          <div className="flex flex-col md:flex-row gap-10 ">
             {quotes.map((item, index) => {
               const Icon = item.icon;
 
               return (
-                <StaggerItem duration={1} key={index}>
-                  <div className="flex flex-col items-center justify-center text-center">
+                <StaggerItem duration={1} key={index} className="flex-1">
+                  <div className="flex flex-col items-center text-center">
                     <div className="icon-wrapper w-12 h-12 flex items-center justify-center mb-5">
                       <Icon />
                     </div>
