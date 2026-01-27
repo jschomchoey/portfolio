@@ -2,7 +2,7 @@ import ProjectsMotion from "@/components/sections/projects/projects.motion";
 
 export default async function ProjectsSection() {
   // const res = await fetch(
-  //   "https://enpoint.here",
+  //   "https://enpoint.here/api/projects",
   //   {
   //     next: { revalidate: 60 },
   //   },
@@ -21,12 +21,13 @@ export default async function ProjectsSection() {
         "Developed responsive web pages and content layouts based on design mockups, ensuring cross-device compatibility.",
       body: "In sit amet metus a ipsum eleifend dictum vitae vel erat. Sed tincidunt sapien massa, tempor mattis lacus pellentesque vitae. Donec congue varius enim sit amet condimentum. Curabitur sodales erat ut mi gravida, at elementum nulla efficitur. Nam dolor quam, elementum sit amet tincidunt ac,",
       date: "08 Jan 2026",
+      type: "Internship",
     },
     {
       userId: 1,
       id: 2,
       slug: "project-find-mate-roommate-recommendation-full-stack",
-      image: "/images/projects/clicknext_logo.jpg",
+      image: "/images/projects/CrossBoot.png",
       title: "Project: Find Mate - Roomate Recommendation / Full Stack",
       description:
         "ประสบการณ์การฝึกงานที่ ClickNext ในตำแหน่ง Frontend Developer ประสบการณ์ไม่มีวันลืม เป็นอย่างไร มีอะไรได้เรียนรู้บ้าง มาดูกัน!",
@@ -36,11 +37,12 @@ export default async function ProjectsSection() {
         "fugiat blanditiis voluptate porro vel nihil molestiae ut reiciendis\n" +
         "qui aperiam non debitis possimus qui neque nisi nulla",
       date: "08 Jan 2026",
+      type: "Project",
     },
     {
       userId: 1,
       id: 3,
-      image: "/images/projects/jsonplaceholder-fake-online-rest-api.webp",
+      image: "/images/projects/CrossBoot.png",
       slug: "crossboot-windows-bootable-usb-creator-on-macos",
       title: "CrossBoot - Windows Bootable USB Creator on macOS",
       description:
@@ -51,11 +53,12 @@ export default async function ProjectsSection() {
         "voluptatem doloribus vel accusantium quis pariatur\n" +
         "molestiae porro eius odio et labore et velit aut",
       date: "08 Jan 2026",
+      type: "Project",
     },
     {
       userId: 1,
       id: 4,
-      image: "/images/projects/jsonplaceholder-fake-online-rest-api.webp",
+      image: "/images/projects/CrossBoot.png",
       slug: "crossboot-windows-bootable-usb-creator-on-macos",
       title: "CrossBoot - Windows Bootable USB Creator on macOS",
       description:
@@ -66,6 +69,7 @@ export default async function ProjectsSection() {
         "voluptatem doloribus vel accusantium quis pariatur\n" +
         "molestiae porro eius odio et labore et velit aut",
       date: "08 Jan 2026",
+      type: "Project",
     },
   ];
 

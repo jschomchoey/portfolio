@@ -1,16 +1,21 @@
 import Button from "@/components/ui/Button";
 import { ChevronRight } from "lucide-react";
 import SafeImage from "@/components/ui/SafeImage";
+import Capsule from "@/components/ui/Capsule";
 
 export default function ProjectCard({ project }) {
   return (
-    <article className="project-card">
+    <article className="project-card relative">
       <SafeImage
         src={project.image}
-        width={540}
-        height={340}
+        width={600}
+        height={330}
         alt={project.title}
       />
+
+      <Capsule variant="outline" className="absolute top-6 right-6">
+        {project.type}
+      </Capsule>
 
       <div className="project-content flex flex-col justify-between flex-1">
         <div className="">

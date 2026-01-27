@@ -15,7 +15,7 @@ export default async function PostsSection() {
       userId: 1,
       id: 1,
       slug: "framer-motion-with-nextjs-13",
-      image: "/images/posts/framer-motion-with-nextjs-13.webp",
+      image: "/images/posts/clicknext_logo.jpg",
       title: "เมื่อ Framer Motion ต้องการ Client Component ร่วมกับ Next.js 13",
       description:
         "เลือกใช้ Next.js เพื่อจะใช้ประโยชน์จาก Server Component แต่ Framer Motion ดันต้องการ Client Component ในการทำ Animation จะทำอย่างไรดี?",
@@ -40,7 +40,7 @@ export default async function PostsSection() {
     {
       userId: 1,
       id: 3,
-      image: "/images/posts/jsonplaceholder-fake-online-rest-api.webp",
+      image: "/images/posts/clicknext_logo.jpg",
       slug: "jsonplaceholder-fake-online-rest-api",
       title: "ea molestias quasi exercitationem repellat qui ipsa sit aut",
       description:
