@@ -10,7 +10,7 @@ import { Mail } from "lucide-react";
 
 export default function Hero() {
   return (
-    <section className="hero-section h-dvh min-h-[700px] px-5 flex flex-col justify-center items-center">
+    <section className="hero-section h-dvh min-h-[700px] max-h-[1200px] px-5 flex flex-col justify-center items-center">
       <div className="h-[82px]"></div>
       <FadeUp className="mb-7" delay={0} duration={1} replay={false}>
         <Capsule variant="outline">Frontend Developer</Capsule>
@@ -42,30 +42,23 @@ export default function Hero() {
           delay={0.7}
           angle={100}
           distance={100}
-          className="absolute top-[-40px] lg:top-[40px] right-[-15px] lg:right-[-110px] rotate-12"
+          className="absolute top-[-40px] lg:top-[40px] right-[-5px] lg:right-[-110px] rotate-12"
         >
-          <Capsule variant="primary">SEO Too!</Capsule>
+          <Capsule variant="primary">SEO Too !</Capsule>
         </FadeDirectional>
       </div>
-      <FadeUp
-        className="text-center max-w-2xl mx-auto mb-7"
-        delay={0.6}
-        duration={1}
-        replay={false}
-      >
-        <p>
-          Hello, I am{" "}
-          <span className="font-bold text-blue-500">Teerapat Chomchoei </span>
-          (James). I am a{" "}
-          <span className="font-bold text-blue-500">
-            Frontend Developer
-          </span>{" "}
-          dedicated to developing websites that effectively meet real-world
-          needs. I place the highest priority on delivering exceptional User
-          Experience (UX) and engaging User Interface (UI) design, ensuring
-          seamless usability and visual consistency.
-        </p>
-      </FadeUp>
+
+      <p className="text-center max-w-2xl mx-auto mb-7 hero-description">
+        Hello, I am{" "}
+        <span className="font-bold text-blue-500">Teerapat Chomchoei </span>
+        (James). I am a{" "}
+        <span className="font-bold text-blue-500">Frontend Developer</span>{" "}
+        dedicated to developing websites that effectively meet real-world needs.
+        I place the highest priority on delivering exceptional User Experience
+        (UX) and engaging User Interface (UI) design, ensuring seamless
+        usability and visual consistency.
+      </p>
+
       <FadeUp
         className="text-center max-w-2xl mx-auto mb-7"
         delay={0.8}
