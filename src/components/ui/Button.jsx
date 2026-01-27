@@ -6,6 +6,8 @@ export default function Button({
   size = "md",
   icon = null,
   href,
+  target = "_self",
+  rel,
   type = "button",
   ariaLabel,
   ...props
@@ -26,7 +28,14 @@ export default function Button({
 
   if (href) {
     return (
-      <Link href={href} className={className} aria-label={ariaLabel} {...props}>
+      <Link
+        href={href}
+        className={className}
+        aria-label={ariaLabel}
+        target={target}
+        rel={rel}
+        {...props}
+      >
         <span className="sr-only">{ariaLabel}</span>
         {icon && <span className="btn-icon">{icon}</span>}
         {children}
