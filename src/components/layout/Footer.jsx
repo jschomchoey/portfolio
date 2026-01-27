@@ -1,11 +1,11 @@
 import Image from "next/image";
 
 const socialMedia = [
-  {
-    name: "Facebook",
-    url: " https://www.facebook.com/tpcc.general",
-    icon: "/images/social/facebook.svg",
-  },
+  // {
+  //   name: "Facebook",
+  //   url: " https://www.facebook.com/tpcc.general",
+  //   icon: "/images/social/facebook.svg",
+  // },
   {
     name: "GitHub",
     url: " https://github.com/jschomchoey",
