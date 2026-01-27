@@ -68,6 +68,10 @@
     font-size: var(--text-body);
 }
 
+.text-small {
+    font-size: var(--text-small);
+}
+
 @media (max-width: 1024px) {
     :root {
         --text-h1: 2rem;
