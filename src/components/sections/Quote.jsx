@@ -34,7 +34,7 @@ export default function Quote() {
             <Capsule variant="outline">Quote</Capsule>
           </FadeUp>
           <FadeUp>
-            <h2 className="text-center">What i focus on?</h2>
+            <h2 className="text-center">What I focus on</h2>
           </FadeUp>
         </div>
         <StaggerContainer stagger={0.1} delay={0.2}>

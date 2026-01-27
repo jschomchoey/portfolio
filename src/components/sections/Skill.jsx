@@ -73,7 +73,7 @@ export default function Skill() {
           </FadeUp>
         </div>
         <StaggerContainer stagger={0.05} delay={0.2}>
-          <div className="flex flex-wrap justify-center gap-5">
+          <div className="flex flex-wrap justify-center gap-3 sm:gap-5">
             {skills.map((item, index) => {
               return (
                 <StaggerItem duration={1} key={index}>
