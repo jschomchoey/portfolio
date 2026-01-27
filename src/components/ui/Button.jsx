@@ -27,34 +27,41 @@ export default function Button({
 
   const className = `${baseClasses} ${variantClasses[variant]} ${sizeClasses[size]}`;
 
-  // File Link, External Link
   if (href && isFile) {
     return (
       <a
         href={href}
         className={className}
-        target={target}
-        rel={rel ?? "noopener noreferrer"}
         aria-label={ariaLabel}
+        target={target}
+        rel={rel}
+        download
         {...props}
       >
+        <span className="sr-only">{ariaLabel}</span>
         {icon && <span className="btn-icon">{icon}</span>}
         {children}
       </a>
     );
   }
 
-  // Internal Link
   if (href) {
     return (
-      <Link href={href} className={className} aria-label={ariaLabel}>
+      <Link
+        href={href}
+        className={className}
+        aria-label={ariaLabel}
+        target={target}
+        rel={rel}
+        {...props}
+      >
+        <span className="sr-only">{ariaLabel}</span>
         {icon && <span className="btn-icon">{icon}</span>}
         {children}
       </Link>
     );
   }
 
-  // Button
   return (
     <button type={type} className={className} {...props}>
       {icon && <span className="btn-icon">{icon}</span>}
