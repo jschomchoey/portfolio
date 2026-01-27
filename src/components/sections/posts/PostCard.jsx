@@ -5,7 +5,7 @@ import SafeImage from "@/components/ui/SafeImage";
 export default function PostCard({ post }) {
   return (
     <article className="post-card">
-      <SafeImage src={post.image} width={540} height={340} alt={post.title} />
+      <SafeImage src={post.image} width={540} height={310} alt={post.title} />
 
       <div className="post-content">
         <h3 className="header">{post.title}</h3>
