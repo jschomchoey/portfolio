@@ -37,10 +37,7 @@ export default function Navbar() {
             const active = pathname === path;
 
             return (
-              <li
-                key={path}
-                className={`relative px-4 py-2 ${active ? "active" : ""}`}
-              >
+              <li key={path} className={`relative ${active ? "active" : ""}`}>
                 {active && (
                   <motion.div
                     layoutId="nav-bg"
@@ -52,7 +49,7 @@ export default function Navbar() {
                     }}
                   />
                 )}
-                <Link href={path} className="relative z-10">
+                <Link href={path} className="relative z-10 px-4 py-2">
                   {label}
                 </Link>
               </li>

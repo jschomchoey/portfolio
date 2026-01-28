@@ -10,9 +10,8 @@
     .nav-list {
         gap: 0.5rem;
 
-        li {
-            cursor: pointer;
-            border-radius: 999px;
+        a {
+            display: block;
         }
 
         .active {
