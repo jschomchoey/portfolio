@@ -22,7 +22,7 @@ type: "Internship"
 
 > This experience strengthened my understanding of production-grade frontend development, security awareness, and cross-team collaboration.
 
-### Suspendisse id euismod turpis Duis ut diam sed risus fermentum pharetra at sit amet dolor. Suspendisse elementum turpis quam, ut venenatis sapien rutrum sit amet.
+## Suspendisse id euismod turpis Duis ut diam sed risus fermentum pharetra
 
 Phasellus accumsan odio rhoncus faucibus dapibus. Quisque eget lorem sit amet lacus euismod commodo sed sit amet arcu. Duis ut diam sed risus fermentum pharetra at sit amet dolor. Suspendisse elementum turpis quam, ut venenatis sapien rutrum sit amet.
 
@@ -32,7 +32,7 @@ In bibendum tellus lectus, non pretium tortor efficitur dictum. Ut nunc mauris, 
 
 Suspendisse id euismod turpis.
 
-### Etiam in risus ante
+## Etiam in risus ante
 
 Mauris facilisis sem a sem varius molestie. Phasellus in egestas libero, id facilisis enim. Aliquam finibus, dolor quis placerat tempus, leo purus commodo ipsum, in pellentesque massa diam ut massa.
 
@@ -42,7 +42,7 @@ Mauris facilisis sem a sem varius molestie. Phasellus in egestas libero, id faci
 
 Nullam vel nunc ac libero dictum consequat. Mauris vehicula lacus a lectus facilisis cursus. Fusce id tempus mauris.
 
-### Curabitur ac mi urna
+## Curabitur ac mi urna
 
 Curabitur ac mi urna. Aliquam ligula metus, maximus non velit vitae, pretium ultrices turpis. Nulla ullamcorper elementum condimentum. Etiam faucibus euismod auctor. Vivamus vestibulum porta nisl non ornare.
 
@@ -50,13 +50,13 @@ Sed nec augue hendrerit, scelerisque nibh et, aliquam ante. Mauris odio felis, v
 
 Vestibulum ut malesuada sem. Sed posuere mauris ut ligula vehicula vulputate. Ut id turpis lacus. Etiam varius dui id massa euismod, id mattis nisi vulputate.
 
-### Nunc eu metus pharetra
+## Nunc eu metus pharetra
 
 **Lobortis urna a, viverra est.** Nulla facilisi. Integer aliquam turpis quis libero egestas, eu ultrices nisl ultrices. Maecenas eget est turpis. Curabitur in augue orci. Proin sed convallis augue.
 
 Donec a metus vel augue facilisis ultricies vel ut ligula. Donec porta dapibus tortor vel efficitur. Maecenas justo diam, dictum a neque sed, eleifend gravida tellus.
 
-### Aliquam erat volutpat
+## Aliquam erat volutpat
 
 Phasellus vehicula ac nisi ut feugiat. In consectetur luctus mi, in laoreet nulla pulvinar non. Ut facilisis congue leo, eget posuere libero rhoncus eget. Sed facilisis hendrerit turpis, a faucibus purus blandit bibendum.
 
@@ -64,7 +64,7 @@ Nam commodo est sit amet diam tincidunt, eget tincidunt ante pellentesque. Fusce
 
 Curabitur eget leo laoreet, auctor sapien a, cursus orci. Curabitur egestas gravida mauris, eu malesuada ipsum aliquam ac.
 
-### Nam nisl leo
+## Nam nisl leo
 
 Nam nisl leo, tempor in mauris ut, volutpat rutrum ligula. Morbi lacinia, risus et pellentesque consequat, lacus est pretium lacus, ut efficitur orci diam ac sem.
 
