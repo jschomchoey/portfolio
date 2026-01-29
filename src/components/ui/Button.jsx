@@ -11,22 +11,33 @@ export default function Button({
   rel,
   type = "button",
   ariaLabel,
+  className: classNameFromProps = "",
   ...props
 }) {
   const baseClasses = "btn inline-flex items-center justify-center";
+
   const variantClasses = {
     primary: "btn-primary",
     secondary: "btn-secondary",
     outline: "btn-outline",
   };
+
   const sizeClasses = {
     sm: "btn-sm",
     md: "btn-md",
     lg: "btn-lg",
   };
 
-  const className = `${baseClasses} ${variantClasses[variant]} ${sizeClasses[size]}`;
+  const className = [
+    baseClasses,
+    variantClasses[variant],
+    sizeClasses[size],
+    classNameFromProps,
+  ]
+    .filter(Boolean)
+    .join(" ");
 
+  // ===== File download =====
   if (href && isFile) {
     return (
       <a
@@ -45,6 +56,7 @@ export default function Button({
     );
   }
 
+  // ===== Link =====
   if (href) {
     return (
       <Link
@@ -62,6 +74,7 @@ export default function Button({
     );
   }
 
+  // ===== Button =====
   return (
     <button type={type} className={className} {...props}>
       {icon && <span className="btn-icon">{icon}</span>}
