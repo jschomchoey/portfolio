@@ -1,4 +1,5 @@
 ---
+id: 3
 title: "เมื่อ Pain Point ตัวเอง กลายมาเป็น CrossBoot Open Source"
 slug: "jsonplaceholder-fake-online-rest-api"
 description: "macOS Arm ดันไม่มี Bootcamp ให้สร้าง USB ติดตั้ง Windows ไหนลองดู GUI เจ้าตลาดซิ เอ้า! ดันไม่รองรับอีก สร้างใช้เองเลยละกัน"

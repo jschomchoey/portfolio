@@ -21,6 +21,7 @@ export function getProjectsList() {
       const { data, content } = matter(fileContents);
 
       return {
+        id: data.id,
         slug,
         title: data.title,
         description: data.description,
@@ -55,6 +56,7 @@ export function getProjectBySlug(slug) {
   const stats = readingTime(content);
 
   return {
+    id: data.id,
     slug,
     title: data.title,
     description: data.description,
