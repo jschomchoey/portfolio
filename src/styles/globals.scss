@@ -9,19 +9,24 @@
 @use "layout/navbar" as navbar;
 
 // Section styles
-@use "sections/hero" as hero;
-@use "sections/post" as post;
-@use "sections/project" as project;
-@use "sections/quote" as quote;
-@use "sections/skill" as skill;
+@use "sections/home/hero" as hero;
+@use "sections/home/post" as post;
+@use "sections/home/project" as project;
+@use "sections/home/quote" as quote;
+@use "sections/home/skill" as skill;
+
+@use "sections/project/body" as body;
+@use "sections/project/header" as header;
 
 // Component styles
 @use "ui/button" as ui;
 @use "ui/capsule" as capsule;
 
 body {
-    font-size: var(--text-body);
-    background-color: var(--bg-primary);
-    color: var(--text-primary);
-    transition: background-color 0.3s, color 0.2s;
+  font-size: var(--text-body);
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  transition:
+    background-color 0.3s,
+    color 0.2s;
 }
