@@ -30,23 +30,13 @@ export const fontSans = localFont({
 export const fontSerif = localFont({
   src: [
     {
-      path: "../../public/fonts/NotoSerifThai/NotoSerifThai_Thin.ttf",
-      weight: "100",
-      style: "normal",
-    },
-    {
-      path: "../../public/fonts/NotoSerifThai/NotoSerifThai_Regular.ttf",
+      path: "../../public/fonts/GoogleSans/GoogleSans_Regular.ttf",
       weight: "400",
       style: "normal",
     },
     {
-      path: "../../public/fonts/NotoSerifThai/NotoSerifThai_Bold.ttf",
+      path: "../../public/fonts/GoogleSans/GoogleSans_Bold.ttf",
       weight: "700",
-      style: "normal",
-    },
-    {
-      path: "../../public/fonts/NotoSerifThai/NotoSerifThai_Black.ttf",
-      weight: "900",
       style: "normal",
     },
   ],
