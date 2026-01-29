@@ -1,6 +1,6 @@
 "use client";
 
-import ProjectCard from "@/components/sections/projects/ProjectCard.jsx";
+import ProjectCard from "@/components/sections/home/projects/ProjectCard.jsx";
 import Capsule from "@/components/ui/Capsule";
 import FadeUp from "@/components/animation/FadeUp";
 import StaggerContainer from "@/components/animation/StaggerContainer";

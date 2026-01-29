@@ -1,4 +1,4 @@
-import PostsMotion from "@/components/sections/posts/posts.motion";
+import PostsMotion from "@/components/sections/home/posts/posts.motion";
 import { getPostsList } from "@/lib/posts";
 
 export default async function PostsSection() {

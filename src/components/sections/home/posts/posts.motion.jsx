@@ -1,7 +1,7 @@
 "use client";
 
-import FeaturedPostCard from "@/components/sections/posts/FeaturedPostCard.jsx";
-import PostCard from "@/components/sections/posts/PostCard.jsx";
+import FeaturedPostCard from "@/components/sections/home/posts/FeaturedPostCard.jsx";
+import PostCard from "@/components/sections/home/posts/PostCard.jsx";
 
 import Capsule from "@/components/ui/Capsule";
 

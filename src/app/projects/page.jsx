@@ -1,5 +1,5 @@
 import { getProjectsList } from "@/lib/projects";
-import ProjectsMotion from "@/components/sections/projects/projects.motion";
+import ProjectsMotion from "@/components/sections/home/projects/projects.motion";
 
 export const metadata = {
   title: "Projects",

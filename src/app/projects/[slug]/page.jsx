@@ -35,6 +35,7 @@ export default async function ProjectDetailPage({ params }) {
 
   return (
     <main className="project-detail">
+      <div className="sm:h-[82px]"></div>
       <article>
         <header>
           <h1>{project.title}</h1>

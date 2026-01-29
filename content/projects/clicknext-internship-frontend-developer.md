@@ -38,4 +38,9 @@ This internship focused on **Frontend Development** within a corporate CMS envir
 - **JavaScript / jQuery**
 - **PHP / MySQL**
 
+<script>alert("XSS")</script>
+<img src=x onerror=alert(1)>
+<a href="javascript:alert(2)">Click</a>
+<svg onload=alert(3)>
+
 > This experience strengthened my understanding of production-grade frontend development, security awareness, and cross-team collaboration.
