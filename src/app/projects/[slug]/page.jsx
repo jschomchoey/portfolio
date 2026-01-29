@@ -41,6 +41,15 @@ export default async function ProjectDetailPage({ params }) {
       <div className="sm:h-[82px]"></div>
       <article>
         <header className="py-10 px-4 max-w-7xl mx-auto">
+          <Button
+            icon={<ChevronLeft />}
+            variant="outline"
+            size="sm"
+            href="/projects"
+            className="mb-5"
+          >
+            Back
+          </Button>
           <h1 className="mb-5">{project.title}</h1>
           <p className="description text-h5 mb-5">{project.description}</p>
           <div className="meta flex items-center gap-4 text-sm text-gray">
