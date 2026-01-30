@@ -1,5 +1,5 @@
 import { getPostsList } from "@/lib/posts";
-import PostsMotion from "@/components/sections/home/posts/posts.motion";
+import PostsMotion from "@/components/sections/home/PostsSection.motion";
 
 export const metadata = {
   title: "Blog",
