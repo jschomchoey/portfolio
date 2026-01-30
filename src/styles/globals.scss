@@ -15,8 +15,9 @@
 @use "sections/home/quote" as quote;
 @use "sections/home/skill" as skill;
 
-@use "sections/project/body" as body;
-@use "sections/project/header" as header;
+@use "sections/article/body" as body;
+@use "sections/article/header" as header;
+@use "sections/article/toc" as toc;
 
 // Component styles
 @use "ui/button" as ui;
