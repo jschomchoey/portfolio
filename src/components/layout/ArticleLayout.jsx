@@ -15,7 +15,7 @@ export default function ArticleLayout({
     return (
         <main className="article-layout">
             {/* Spacer for fixed navbar */}
-            <div className="sm:h-[82px] h-[70px]"></div>
+            <div className="sm:h-[82px] h-[50px]"></div>
 
             <article>
                 {/* Header Section */}
@@ -23,7 +23,7 @@ export default function ArticleLayout({
                     {/* Breadcrumb */}
                     {breadcrumb.length > 0 && (
                         <nav
-                            className="breadcrumb mb-5 text-sm text-gray-500 flex items-center gap-1"
+                            className="breadcrumb mb-5 text-sm flex items-center gap-1"
                             aria-label="Breadcrumb"
                         >
                             {breadcrumb.map((item, index) => (
@@ -44,7 +44,7 @@ export default function ArticleLayout({
                     )}
 
                     <FadeUp>
-                        <h1 className="mb-3 text-3xl md:text-4xl font-bold">{title}</h1>
+                        <h1 className="mb-3 text-h3">{title}</h1>
                     </FadeUp>
 
                     {description && (

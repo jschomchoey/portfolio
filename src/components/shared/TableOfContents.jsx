@@ -29,7 +29,7 @@ export default function TableOfContents({ headings }) {
   if (!headings?.length) return null;
   return (
     <nav className="toc mb-4">
-      <div className="font-bold mb-2">On this page</div>
+      <div className="font-bold mb-2 mt-4">On this page</div>
       <ul className="space-y-1">
         {headings.map((h) => (
           <li

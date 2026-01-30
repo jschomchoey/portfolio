@@ -1,11 +1,12 @@
-.project-detail {
+.article-layout {
   .toc {
     ul {
       border-left: 2px solid var(--color-primary-light);
+
       li {
         padding-left: 1rem;
         margin-left: -2px;
-        margin-bottom: 0.5rem;
+        margin-bottom: 0.75rem;
         border-left: 3px solid #00000000;
 
         &.active {
