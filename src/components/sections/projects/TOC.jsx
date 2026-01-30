@@ -9,7 +9,7 @@ export default function TOC({ headings }) {
     function onScroll() {
       const scrollY = window.scrollY;
       let current = null;
-      const offset = 250; // px from top
+      const offset = 150; // px from top
       for (const h of headings) {
         const el = document.getElementById(h.id);
         if (el) {
@@ -32,13 +32,16 @@ export default function TOC({ headings }) {
       <div className="font-bold mb-2">On this page</div>
       <ul className="space-y-1">
         {headings.map((h) => (
-          <li key={h.id} className={h.level === 3 ? "ml-4" : ""}>
+          <li
+            key={h.id}
+            className={
+              (h.level === 3 ? "has-child " : "") +
+              (activeId === h.id ? "active " : "")
+            }
+          >
             <a
               href={`#${h.id}`}
-              className={
-                `hover:underline text-sm text-gray-700` +
-                (activeId === h.id ? " font-bold text-primary" : "")
-              }
+              className={"text-sm"}
               onClick={(e) => {
                 e.preventDefault();
                 const el = document.getElementById(h.id);

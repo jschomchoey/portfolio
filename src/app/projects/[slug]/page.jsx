@@ -11,6 +11,8 @@ import "highlight.js/styles/atom-one-dark.css";
 import Button from "@/components/ui/Button";
 import { ChevronLeft } from "lucide-react";
 
+import FadeUp from "@/components/animation/FadeUp";
+
 // Generate static params for all projects
 export async function generateStaticParams() {
   const slugs = getAllProjectSlugs();
@@ -95,34 +97,42 @@ export default async function ProjectDetailPage({ params }) {
           >
             Back
           </Button>
-          <h1 className="mb-5">{project.title}</h1>
-          <p className="description text-h5 mb-5">{project.description}</p>
-          <div className="meta flex items-center gap-4 text-sm text-gray">
-            <span className="date">{project.date}</span>
-            {/* <span className="type">{project.type}</span> */}
-            <span className="reading-time">{project.readingTime}</span>
-          </div>
+          <FadeUp>
+            <h1 className="mb-5">{project.title}</h1>
+          </FadeUp>
+          <FadeUp delay={0.05}>
+            <p className="description text-h5 mb-5">{project.description}</p>
+          </FadeUp>
+          <FadeUp delay={0.1}>
+            <div className="meta flex items-center gap-4 text-sm text-gray">
+              <span className="date">{project.date}</span>
+              <span className="reading-time">{project.readingTime}</span>
+            </div>
+          </FadeUp>
         </header>
 
         <div className="content">
           <div className="wrapper mx-auto max-w-7xl px-4 py-10">
             <div className="main-image">
-              <SafeImage
-                src={project.image}
-                width={1280}
-                height={640}
-                alt={project.title}
-              />
+              <FadeUp delay={0.15}>
+                <SafeImage
+                  src={project.image}
+                  width={1280}
+                  height={640}
+                  alt={project.title}
+                />
+              </FadeUp>
             </div>
 
             <div className="flex gap-8 justify-center items-start">
               <aside className="hidden lg:block w-64 shrink-0 sticky top-24">
                 <TOC headings={headings} />
               </aside>
-
-              <div className="detail flex-1 max-w-3xl font-serif">
-                <ProjectMarkdownDetail body={project.body} />
-              </div>
+              <FadeUp>
+                <div className="detail flex-1 max-w-3xl font-serif">
+                  <ProjectMarkdownDetail body={project.body} />
+                </div>
+              </FadeUp>
             </div>
           </div>
         </div>
