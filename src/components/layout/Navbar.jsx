@@ -5,7 +5,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X } from "lucide-react";
-import ThemeToggle from "../theme-toggle";
+import ThemeToggle from "./ThemeToggle";
 
 const navItems = [
   ["/", "Home"],

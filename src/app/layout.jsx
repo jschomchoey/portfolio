@@ -3,7 +3,7 @@ import "../styles/globals.scss";
 
 import Navbar from "../components/layout/Navbar";
 import Footer from "../components/layout/Footer";
-import ThemeProvider from "../components/theme-provider";
+import ThemeProvider from "../components/providers/ThemeProvider";
 
 export const metadata = {
   title: "T1ramisu",
