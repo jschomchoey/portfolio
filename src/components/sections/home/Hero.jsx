@@ -3,9 +3,7 @@ import FadeUp from "@/components/animation/FadeUp";
 import FadeDirectional from "@/components/animation/FadeDirectional";
 import Button from "@/components/ui/Button";
 import Capsule from "@/components/ui/Capsule";
-
 import Image from "next/image";
-
 import { Mail, FileText } from "lucide-react";
 
 export default function Hero() {
