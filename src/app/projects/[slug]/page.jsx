@@ -1,17 +1,13 @@
 import { getProjectBySlug, getAllProjectSlugs } from "@/lib/projects";
 import { notFound } from "next/navigation";
-// import ReactMarkdown from "react-markdown";
-// import { useMemo } from "react";
 import SafeImage from "@/components/ui/SafeImage";
-// import rehypeHighlight from "rehype-highlight";
-import slugify from "slugify";
+import Button from "@/components/ui/Button";
+import FadeUp from "@/components/animation/FadeUp";
 import TOC from "@/components/sections/projects/TOC";
 import ProjectMarkdownDetail from "@/components/sections/projects/ProjectMarkdownDetail";
-import "highlight.js/styles/atom-one-dark.css";
-import Button from "@/components/ui/Button";
+import slugify from "slugify";
+import "highlight.js/styles/github-dark.css";
 import { ChevronLeft } from "lucide-react";
-
-import FadeUp from "@/components/animation/FadeUp";
 
 // Generate static params for all projects
 export async function generateStaticParams() {
@@ -33,6 +29,19 @@ export async function generateMetadata({ params }) {
   return {
     title: project.title,
     description: project.description,
+    openGraph: {
+      title: project.title,
+      description: project.description,
+      images: [
+        {
+          url: project.image,
+          width: 1200,
+          height: 630,
+          alt: project.title,
+        },
+      ],
+      type: "article",
+    },
   };
 }
 
@@ -98,10 +107,10 @@ export default async function ProjectDetailPage({ params }) {
             Back
           </Button>
           <FadeUp>
-            <h1 className="mb-5">{project.title}</h1>
+            <h1 className="mb-3 text-h3">{project.title}</h1>
           </FadeUp>
           <FadeUp delay={0.05}>
-            <p className="description text-h5 mb-5">{project.description}</p>
+            <p className="description mb-3">{project.description}</p>
           </FadeUp>
           <FadeUp delay={0.1}>
             <div className="meta flex items-center gap-4 text-sm text-gray">
@@ -114,7 +123,7 @@ export default async function ProjectDetailPage({ params }) {
         <div className="content">
           <div className="wrapper mx-auto max-w-7xl px-4 py-10">
             <div className="main-image">
-              <FadeUp delay={0.15}>
+              <FadeUp>
                 <SafeImage
                   src={project.image}
                   width={1280}
