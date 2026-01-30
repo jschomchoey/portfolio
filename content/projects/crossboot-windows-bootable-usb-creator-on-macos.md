@@ -10,18 +10,22 @@ type: "Project"
 
 ## Overview
 
-Developed a macOS utility to create Windows bootable USB drives, supporting Legacy BIOS, UEFI, and Secure Boot configurations.
+Developed a macOS utility to create Windows bootable USB drives directly on macOS ARM, supporting Legacy BIOS, UEFI, and Secure Boot configurations.
 
 ## Features
 
-- Automated WIM file splitting for compatibility with FAT32 file systems.
-- Implemented Windows 11 installation bypass mechanisms.
-- User-friendly interface for seamless USB creation.
+- Clean and easy-to-use interface
+- Automatic WIM file splitting for FAT32 compatibility (handles files over 4GB)
+- Supports both Legacy BIOS and UEFI boot modes
+- Secure Boot compatible
+- Drag-and-drop ISO support
+- Real-time progress tracking
+- Option to bypass Windows 11 hardware requirements and Online Account
 
 ## Tech Stack
 
-- **Language:** Swift
+- **Language:** React, Electron JS
 - **Platform:** macOS
-- **Tools:** Disk Utility, Terminal commands
+- **Tools:** wimlib
 
-> This project enhanced my skills in system-level programming, macOS development, and Windows installation processes.
+[https://github.com/jschomchoey/CrossBoot](https://github.com/jschomchoey/CrossBoot)

@@ -20,9 +20,9 @@ Developed a full-stack roommate recommendation application leveraging personalit
 
 ## Tech Stack
 
-- **Frontend:** React, Tailwind CSS
+- **Frontend:** React, MaterialUI
 - **Backend:** Node.js, Express
-- **Database:** MongoDB
+- **Database:** MySQL
 - **Authentication:** OTP-based verification
 
 > This project enhanced my skills in full-stack development, security implementation, and user-centric design.

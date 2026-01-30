@@ -1,88 +1,80 @@
 ---
 id: "1"
 title: "ClickNext Internship | Frontend Developer"
-slug: "clicknext-internship-frontend-developer"
+slug: "clickNext-internship-frontend-developer"
 description: "Worked on corporate CMS customization, security vulnerability fixes, and government backend testing, focusing on responsive design, system stability, and bug reduction."
-image: "/images/projects/CrossBoot.png"
+image: "/images/projects/ClickNext_logo.jpg"
 date: "2026-01-08"
 type: "Internship"
 ---
 
-## Lorem Ipsum Dolor Sit Amet non pretium tortor efficitur dictum. Ut nunc mauris
+## Internship Experience: My Journey as a Frontend Developer at ClickNext
 
-พงษ์ทริปสัมนาทริป คอร์สธัมโม คอนเซ็ปต์เซนเซอร์อันเดอร์ฮ็อต เช็งเม้งว้าวซิ่งรุสโซผู้นำโต๊ะจีนผิดพลาดราชานุญาต แรงผลักเวิลด์หมั่นโถว ไลท์ยอมรับคอลัมนิสต์ดยุค ควีนลอร์ดแซวแพนดาสเตชั่น เซนเซอร์ไฮเวย์ซาร์ดีนบูติก รีโมทพาร์ทเนอร์คอมเมนต์เหมยมหาอุปราชา กู๋คอนโดโกเต็กซ์ซื่อบื้อ รามเทพลามะแครอท เซี้ยวเซ่นไหว้ ดีเจอาว์รากหญ้าโบว์ลิ่ง บลูเบอร์รีโปร
+My internship at **ClickNext** marked the first significant step in my career path. This article summarizes my responsibilities, the projects I contributed to, and the key lessons I learned during my 4 months (June - October 2025) as a **Frontend Developer Intern (Team Project 4)**.
 
-อุปัทวเหตุ เปโซนิว บึ้มปัจฉิมนิเทศสหัสวรรษนิว ซาร์ดีนคาแร็คเตอร์ซีเนียร์สันทนาการสเปค อุปนายิกาฟิวเจอร์ไอเดีย มาร์ก ซีนีเพล็กซ์คอรัปชั่นซีอีโอแพนดา สปอร์ตกฤษณ์ คอมพ์กรีน วอลนัตวีเจคลาสสิก อัตลักษณ์แฟ็กซ์ แจ็กพอตไอซียู สเตชั่นตื้บเช็งเม้งเกมส์ไนน์ จังโก้ฮีโร่ ไทม์คอนเซปต์ โกเต็กซ์
+---
 
-```html
-<script>
-  alert("XSS");
-</script>
-<img src="x" onerror="alert(1)" />
-<a href="javascript:alert(2)">Click</a>
-<svg onload="alert(3)"></svg>
-```
+## About the Role
 
-เทอร์โบ เทคฮาลาลหมวย มหภาคแฟรนไชส์พาร์ตเนอร์ รีสอร์ตปาสคาลซังเตบอมบ์เลิฟ แชมป์แครกเกอร์ แฟรี่เทคโนแครต ชาร์จวานิลลา ดาวน์ รากหญ้าอุปัทวเหตุฮาร์ดสเตชัน โรลออน โอยัวะอันตรกิริยาแพลนแอ๊บแบ๊ว พาสเจอร์ไรส์ชาร์ต ฮ่องเต้อินดอร์เวิร์กช็อปวานิลลา โฟล์คสงบสุขบิลอันตรกิริยาโรแมนติค แชมเปญโอ้ยก๊วน กระดี๊กระด๊าพรีเมียมชาร์จ
+- **Position:** Frontend Developer Intern
+- **Company:** [ClickNext](https://www.clicknext.com/) - A leading Enterprise Digital Solution and Software Service Provider in Thailand.
+- **Duration:** June 26, 2025 – October 31, 2025
 
-มาร์จินแอดมิสชันคณาญาติเนิร์สเซอรี่อีสเตอร์ อพาร์ตเมนต์บรา โฮปเฝอจูนแม่ค้า แพทยสภาบอยคอตแม็กกาซีน ภารตะมยุราภิรมย์อพาร์ตเมนต์บ๋อยไฮเอนด์ กาญจนาภิเษกแจ๊กพ็อตเจ๊ออดิชั่นกรุ๊ป ธรรมาศิรินทร์โดนัท โพลารอยด์โกเต็กซ์ แบ็กโฮสปอร์ตโมเต็ลโซน แครกเกอร์บัตเตอร์โรลออนเวอร์ตุ๊ด ฟลุคเหี่ยวย่นหลวงตา โบตั๋น คันยิแหม็บซิงพาเหรด ตัวเองเปโซเมจิคเทวาธิราชไทม์ ถูกต้องเคส แพกเกจ﻿กรรมาชนอุตสาหการแพทเทิร์น
+---
 
-> This experience strengthened my understanding of production-grade frontend development, security awareness, and cross-team collaboration.
+## Key Responsibilities & Projects
 
-## Suspendisse id euismod turpis Duis ut diam sed risus fermentum pharetra
+My role covered a wide spectrum of development, ranging from Frontend UI/UX implementation to critical Backend Testing and Security remediation.
 
-Phasellus accumsan odio rhoncus faucibus dapibus. Quisque eget lorem sit amet lacus euismod commodo sed sit amet arcu. Duis ut diam sed risus fermentum pharetra at sit amet dolor. Suspendisse elementum turpis quam, ut venenatis sapien rutrum sit amet.
+### 1. Corporate CMS & Intranet Development
 
-### sagittis id. Duis eget
+I was responsible for developing themes and customizing CMS environments for several high-profile corporate and state enterprise clients, including the **Industrial Estate Authority of Thailand (IEAT)** (Intranet Themes)
 
-In bibendum tellus lectus, non pretium tortor efficitur dictum. Ut nunc mauris, sollicitudin sit amet dignissim id, blandit vel massa. Aenean sodales varius arcu, quis aliquam felis sagittis id. Duis eget ligula turpis. Maecenas viverra purus a tempus aliquam.
+- **Responsive Implementation:** Developed web layouts and content structures based on design mockups, ensuring full responsive compatibility across devices.
+- **Page Builder Customization:** Created and customized Widgets and Elements for the internal Page Builder system, allowing clients to manage content flexibly according to their specific design requirements.
 
-> Praesent in blandit arcu, at dictum felis. Duis rhoncus velit vel orci tincidunt rutrum.
+### 2. Backend Quality Assurance (Department of Lands Project)
 
-Suspendisse id euismod turpis.
+Beyond frontend tasks, I contributed to the backend reliability of a government service platform for the **Department of Lands**.
 
-### vel nunc ac libero dictum
+- **Unit Testing:** Executed comprehensive unit testing using **PHPUnit**, covering over **200+ test cases**.
+- **Logic Validation:** Validated service payloads and business logic to ensure correct data processing. This process helped identify and report critical logic errors to the development team before production deployment.
 
-Sestibulum ut malesuada sem. Sed posuere mauris ut ligula vehicula vulputate. Ut id turpis lacus. Etiam varius dui id massa euismod, id mattis nisi vulputate.
+### 3. Vulnerability Remediation & Security
 
-## Etiam in risus ante
+This was a challenging aspect of my internship, focusing on resolving security defects identified during **Penetration Testing (Pentest)** for the **Department of Lands.**
 
-Mauris facilisis sem a sem varius molestie. Phasellus in egestas libero, id facilisis enim. Aliquam finibus, dolor quis placerat tempus, leo purus commodo ipsum, in pellentesque massa diam ut massa.
+- **Security Hardening:** Fixed **Cross-Site Scripting (XSS)** vulnerabilities across both Back Office systems and Frontend inputs.
+- **Server Configuration:** Configured Apache Rewrite rules to block public access to sensitive system files (e.g., `.git`, `php.ini`).
+- **Documentation:** Created detailed **Database Table Descriptions** for the production database to support future system maintenance.
 
-- Praesent porta vitae ligula sed vestibulum
-- Ut orci nulla, facilisis a libero in, commodo rutrum dui
-- Quisque egestas lacinia lorem ut venenatis
+---
 
-Nullam vel nunc ac libero dictum consequat. Mauris vehicula lacus a lectus facilisis cursus. Fusce id tempus mauris.
+## Tech Stack & Tools
 
-## Curabitur ac mi urna
+The technologies and tools I utilized daily included:
 
-Curabitur ac mi urna. Aliquam ligula metus, maximus non velit vitae, pretium ultrices turpis. Nulla ullamcorper elementum condimentum. Etiam faucibus euismod auctor. Vivamus vestibulum porta nisl non ornare.
+- **Languages:** PHP, JavaScript, HTML5, SCSS.
+- **Frameworks/Libraries:** Bootstrap, jQuery.
+- **Database:** MySQL, MSSQL.
+- **Testing & Security:** PHPUnit, Apache Configuration.
+- **Tools:** Git Version Control, Postman.
 
-Sed nec augue hendrerit, scelerisque nibh et, aliquam ante. Mauris odio felis, vestibulum id tempor nec, dignissim et massa. Pellentesque at tortor ultricies, tempor neque sit amet, viverra ipsum.
+---
 
-Vestibulum ut malesuada sem. Sed posuere mauris ut ligula vehicula vulputate. Ut id turpis lacus. Etiam varius dui id massa euismod, id mattis nisi vulputate.
+## What I Learned
 
-## Nunc eu metus pharetra
+This experience provided more than just technical skills; it significantly improved my professional workflow and soft skills.
 
-**Lobortis urna a, viverra est.** Nulla facilisi. Integer aliquam turpis quis libero egestas, eu ultrices nisl ultrices. Maecenas eget est turpis. Curabitur in augue orci. Proin sed convallis augue.
+1.  **Working with Legacy & Large-Scale Projects:** I learned how to navigate and write PHP code within a large, established codebase structure.
+2.  **Collaborative Git Workflow:** I gained practical experience using Git in a team environment, managing branches, and resolving conflicts.
+3.  **Problem Solving & Code Efficiency:** I improved my ability to structure responsive layouts and reuse code effectively, reducing redundancy. I also focused on strengthening my own coding logic, relying less on AI tools compared to when I started.
+4.  **Professional Communication:** I learned the importance of clear communication when reporting issues or discussing solutions with senior developers.
 
-Donec a metus vel augue facilisis ultricies vel ut ligula. Donec porta dapibus tortor vel efficitur. Maecenas justo diam, dictum a neque sed, eleifend gravida tellus.
+---
 
-## Aliquam erat volutpat
+## Conclusion
 
-Phasellus vehicula ac nisi ut feugiat. In consectetur luctus mi, in laoreet nulla pulvinar non. Ut facilisis congue leo, eget posuere libero rhoncus eget. Sed facilisis hendrerit turpis, a faucibus purus blandit bibendum.
+My internship at ClickNext was an invaluable 4-month journey. Working on real-world projects for major clients gave me the confidence and skills needed to transition into a full-time developer role.
 
-Nam commodo est sit amet diam tincidunt, eget tincidunt ante pellentesque. Fusce semper tincidunt nisl, vel congue ipsum pulvinar eget.
-
-Curabitur eget leo laoreet, auctor sapien a, cursus orci. Curabitur egestas gravida mauris, eu malesuada ipsum aliquam ac.
-
-## Nam nisl leo
-
-Nam nisl leo, tempor in mauris ut, volutpat rutrum ligula. Morbi lacinia, risus et pellentesque consequat, lacus est pretium lacus, ut efficitur orci diam ac sem.
-
-Suspendisse eleifend neque eget sagittis elementum. Nullam in dui turpis. Vivamus fermentum pretium sapien, porta molestie tellus interdum at. Maecenas augue sem, cursus placerat cursus consequat, suscipit non nisl.
-
-Quisque dignissim posuere tincidunt. Nulla ut porta lorem, eu cursus elit. Duis id felis tortor.
-
-Suspendisse eleifend neque eget sagittis elementum. Nullam in dui turpis. Vivamus fermentum pretium sapien, porta molestie tellus interdum at. Maecenas augue sem, cursus placerat cursus consequat, suscipit non nisl.
+> A special thanks to the Frontend Team (Project 4) at ClickNext for the guidance and opportunity!

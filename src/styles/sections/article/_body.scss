@@ -1,6 +1,6 @@
 h2,
 h3 {
-  scroll-margin-top: 82px;
+  scroll-margin-top: 100px;
 }
 .content {
   background-color: var(--bg-secondary);
@@ -29,6 +29,7 @@ h3 {
     h5,
     h6 {
       margin-bottom: 0.5rem;
+      margin-top: 1rem;
     }
 
     h2 {
@@ -42,17 +43,23 @@ h3 {
     }
 
     p {
-      margin-bottom: 1rem;
+      margin-bottom: 0.5rem;
+    }
+
+    a {
+      color: var(--color-primary);
+      text-decoration: underline;
     }
 
     li {
-      margin-bottom: 0.5rem;
+      margin-bottom: 0.25rem;
       list-style-type: disc;
       margin-left: 1.5rem;
     }
 
     hr {
       margin: 1rem 0;
+      color: #cccccc;
     }
 
     pre {
