@@ -1,6 +1,7 @@
 import { getPostBySlug, getAllPostSlugs } from "@/lib/posts";
 import { notFound } from "next/navigation";
-import ReactMarkdown from "react-markdown";
+import ArticleLayout from "@/components/layout/ArticleLayout";
+import { extractHeadings } from "@/lib/markdown";
 
 // Generate static params for all posts
 export async function generateStaticParams() {
@@ -33,22 +34,21 @@ export default async function BlogDetailPage({ params }) {
     notFound();
   }
 
-  return (
-    <main className="blog-detail">
-      <article>
-        <header>
-          <h1>{post.title}</h1>
-          <p className="description">{post.description}</p>
-          <div className="meta">
-            <span className="date">{post.date}</span>
-            <span className="reading-time">{post.readingTime}</span>
-          </div>
-        </header>
+  const headings = extractHeadings(post.body);
 
-        <div className="content">
-          <ReactMarkdown>{post.body}</ReactMarkdown>
-        </div>
-      </article>
-    </main>
+  const breadcrumb = [
+    { label: "Home", href: "/" },
+    { label: "Blog", href: "/blog" },
+    { label: post.title },
+  ];
+
+  return (
+    <ArticleLayout
+      meta={post}
+      toc={headings}
+      breadcrumb={breadcrumb}
+    >
+      {post.body}
+    </ArticleLayout>
   );
 }
