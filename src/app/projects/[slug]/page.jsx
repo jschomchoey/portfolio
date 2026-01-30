@@ -97,15 +97,20 @@ export default async function ProjectDetailPage({ params }) {
       <div className="sm:h-[82px]"></div>
       <article>
         <header className="py-10 px-4 max-w-7xl mx-auto">
-          <Button
-            icon={<ChevronLeft />}
-            variant="outline"
-            size="sm"
-            href="/projects"
-            className="mb-5"
+          <nav
+            className="mb-5 text-sm text-gray-500 flex items-center gap-1"
+            aria-label="Breadcrumb"
           >
-            Back
-          </Button>
+            <a href="/" className="hover:underline">
+              Home
+            </a>
+            <span>/</span>
+            <a href="/projects" className="hover:underline">
+              Projects
+            </a>
+            <span>/</span>
+            <span className="text-gray-700 font-medium">{project.title}</span>
+          </nav>
           <FadeUp>
             <h1 className="mb-3 text-h3">{project.title}</h1>
           </FadeUp>
@@ -129,6 +134,7 @@ export default async function ProjectDetailPage({ params }) {
                   width={1280}
                   height={640}
                   alt={project.title}
+                  priority
                 />
               </FadeUp>
             </div>
