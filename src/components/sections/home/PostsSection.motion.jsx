@@ -2,9 +2,7 @@
 
 import FeaturedPostCard from "@/components/ui/cards/FeaturedPostCard";
 import PostCard from "@/components/ui/cards/PostCard";
-
 import Capsule from "@/components/ui/Capsule";
-
 import FadeUp from "@/components/animation/FadeUp";
 import StaggerContainer from "@/components/animation/StaggerContainer";
 import StaggerItem from "@/components/animation/StaggerItem";
