@@ -23,7 +23,7 @@ export default function ArticleLayout({
                     {/* Breadcrumb */}
                     {breadcrumb.length > 0 && (
                         <nav
-                            className="mb-5 text-sm text-gray-500 flex items-center gap-1"
+                            className="breadcrumb mb-5 text-sm text-gray-500 flex items-center gap-1"
                             aria-label="Breadcrumb"
                         >
                             {breadcrumb.map((item, index) => (
