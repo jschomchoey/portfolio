@@ -1,6 +1,6 @@
 ---
 id: 2
-title: "รีวิวฝึกงานที่ ClickNext - Frontend Developer"
+title: "Mock Data: รีวิวฝึกงานที่ ClickNext - Frontend Developer"
 slug: "internship-review-clicknext"
 description: "ประสบการณ์การฝึกงานที่ ClickNext ในตำแหน่ง Frontend Developer ประสบการณ์ไม่มีวันลืม เป็นอย่างไร มีอะไรได้เรียนรู้บ้าง มาดูกัน!"
 image: "/images/posts/clicknext_logo.jpg"

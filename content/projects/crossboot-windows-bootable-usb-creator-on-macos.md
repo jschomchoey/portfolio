@@ -10,7 +10,7 @@ type: "Project"
 
 ## Overview
 
-Developed a macOS utility to create Windows bootable USB drives directly on macOS ARM, supporting Legacy BIOS, UEFI, and Secure Boot configurations.
+Developed a macOS utility to create Windows bootable USB drives directly on macOS, supporting Legacy BIOS, UEFI, and Secure Boot configurations.
 
 ## Features
 

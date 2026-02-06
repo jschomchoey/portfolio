@@ -1,6 +1,6 @@
 ---
 id: "2"
-title: "Coway Sales Representative Websites"
+title: "Mock Data: Coway Sales Representative Websites"
 slug: "coway-sales-representative-websites"
 description: "Designed and launched sales representative websites using Wix, focusing on user-centric UI/UX, SEO optimization, and dynamic content management to improve visibility and engagement."
 image: "/images/projects/CowayCorp.png"
