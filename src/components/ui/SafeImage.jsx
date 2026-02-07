@@ -4,10 +4,9 @@ import Image from "next/image";
 import { useState } from "react";
 
 export default function SafeImage({
-  src = "/images/t1ramisu.webp", // default image
+  src = "/images/t1ramisu.webp",
   alt,
-  fallback = "/images/t1ramisu.webp", // fallback no image
-  priority = false,
+  fallback = "/images/t1ramisu.webp",
   ...props
 }) {
   const [imgSrc, setImgSrc] = useState(src || fallback);
@@ -18,7 +17,6 @@ export default function SafeImage({
       src={imgSrc}
       alt={alt}
       onError={() => setImgSrc(fallback)}
-      priority={priority}
     />
   );
 }

@@ -49,9 +49,7 @@ export default function ArticleLayout({
 
                     {description && (
                         <FadeUp delay={0.05}>
-                            <p className="description mb-3">
-                                {description}
-                            </p>
+                            <p className="description mb-3">{description}</p>
                         </FadeUp>
                     )}
 
@@ -77,7 +75,7 @@ export default function ArticleLayout({
                                         width={1280}
                                         height={640}
                                         alt={title}
-                                        priority
+                                        preload={true}
                                         className="w-full h-auto object-cover"
                                     />
                                 </FadeUp>
@@ -96,7 +94,11 @@ export default function ArticleLayout({
                             <FadeUp className="flex-1 w-full max-w-3xl">
                                 <div className="detail font-serif">
                                     {/* If children is string, assume it's markdown and render it */}
-                                    {typeof children === 'string' ? <MarkdownRenderer content={children} /> : children}
+                                    {typeof children === "string" ? (
+                                        <MarkdownRenderer content={children} />
+                                    ) : (
+                                        children
+                                    )}
                                 </div>
                             </FadeUp>
                         </div>
