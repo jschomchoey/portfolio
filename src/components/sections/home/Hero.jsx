@@ -6,20 +6,39 @@ import Capsule from "@/components/ui/Capsule";
 import Image from "next/image";
 import { Mail, FileText } from "lucide-react";
 
-export default function Hero() {
+const contentMap = {
+  frontend: {
+    headline: "Bridging beautiful design and powerful performance to create websites that truly matter.",
+    highlightWords: ["beautiful", "performance"],
+    description: "Hi, I’m Teerapat Chomchoei (James). A Frontend Developer who enjoys turning thoughtful design into fast, user-friendly websites. I specialize in UX/UI-focused development with an emphasis on usability, performance, and clean visual consistency.",
+    capsule: "Frontend Developer",
+    resumeURL: "/files/documents/Resume_Frontend.pdf",
+  },
+  softwareengineer: {
+    headline: "Bridging beautiful design and powerful performance to create websites that truly matter.",
+    highlightWords: ["beautiful", "performance"],
+    description: "Hi, I’m Teerapat Chomchoei (James). A Software Engineer who enjoys turning thoughtful design into fast, user-friendly websites. I specialize in UX/UI-focused development with an emphasis on usability, performance, and clean visual consistency.",
+    capsule: "Software Engineer",
+    resumeURL: "/files/documents/Resume_SoftwareEngineer.pdf",
+  },
+}
+
+export default function Hero({ role }) {
+  const activeRole = contentMap[role] ? role : 'frontend';
+
   return (
     <section className="hero-section h-dvh min-h-[700px] max-h-[1200px] px-5 flex flex-col justify-center items-center">
       <div className="sm:h-[82px]"></div>
       <FadeUp className="mb-7" delay={0} duration={1} replay={false}>
-        <Capsule variant="outline">Frontend Developer</Capsule>
+        <Capsule variant="outline"> {contentMap[activeRole].capsule}</Capsule>
       </FadeUp>
       <div className="relative">
         <AnimatedText
-          text="Bridging beautiful design and powerful performance to create websites that truly matter."
+          text={contentMap[activeRole].headline}
           as="h1"
           delay={0.1}
           duration={0.6}
-          highlightWords={["beautiful", "performance"]}
+          highlightWords={contentMap[activeRole].highlightWords}
           className="text-center text-center max-w-2xl mx-auto mb-5"
         />
         <FadeDirectional
@@ -46,13 +65,7 @@ export default function Hero() {
         </FadeDirectional>
       </div>
       <p className="text-center max-w-2xl mx-auto mb-7 hero-description">
-        Hi, I’m{" "}
-        <span className="font-bold text-blue-500">
-          Teerapat Chomchoei (James)
-        </span>
-        . A Frontend Developer who enjoys turning thoughtful design into fast,
-        user-friendly websites. I specialize in UX/UI-focused development with
-        an emphasis on usability, performance, and clean visual consistency.
+        {contentMap[activeRole].description}
       </p>
 
       <FadeUp
@@ -94,7 +107,7 @@ export default function Hero() {
           </div>
 
           <Button
-            href={`/files/documents/Resume.pdf`}
+            href={contentMap[activeRole].resumeURL}
             target="_blank"
             isFile={true}
             variant="outline"
