@@ -4,7 +4,7 @@ title: "Mock Data: Project: Find Mate - Roomate Recommendation"
 slug: "project-find-mate-roommate-recommendation"
 description: "Built a full-stack roommate recommendation application using personality-based compatibility matching. Implemented a secure mutual match system with OTP verification and an admin dashboard for user and report management."
 image: "/images/projects/FindMate.webp"
-date: "2026-01-08"
+date: "2026-01-15"
 type: "Project"
 ---
 
