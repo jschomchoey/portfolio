@@ -34,28 +34,28 @@ const contentMap = {
 export default function Hero() {
   const [activeRole, setActiveRole] = useState("fe");
 
-  useEffect(() => {
-    const urlRole = new URLSearchParams(window.location.search).get("role");
-    const cookieRole = getCookie("preferredRole");
+  // useEffect(() => {
+  //   const urlRole = new URLSearchParams(window.location.search).get("role");
+  //   const cookieRole = getCookie("preferredRole");
 
-    // Early return
-    if (!urlRole && !cookieRole) {
-      return;
-    }
+  //   // Early return
+  //   if (!urlRole && !cookieRole) {
+  //     return;
+  //   }
 
-    const resolved =
-      (urlRole && contentMap[urlRole] ? urlRole : null) ||
-      (cookieRole && contentMap[cookieRole] ? cookieRole : null) ||
-      "fe";
+  //   const resolved =
+  //     (urlRole && contentMap[urlRole] ? urlRole : null) ||
+  //     (cookieRole && contentMap[cookieRole] ? cookieRole : null) ||
+  //     "fe";
 
-    if (urlRole && contentMap[urlRole]) {
-      setCookie("preferredRole", urlRole);
-    }
+  //   if (urlRole && contentMap[urlRole]) {
+  //     setCookie("preferredRole", urlRole);
+  //   }
 
-    if (resolved !== "fe") {
-      setActiveRole(resolved);
-    }
-  }, []);
+  //   if (resolved !== "fe") {
+  //     setActiveRole(resolved);
+  //   }
+  // }, []);
 
   return (
     <section className="hero-section h-dvh min-h-[700px] max-h-[1200px] px-5 flex flex-col justify-center items-center">
