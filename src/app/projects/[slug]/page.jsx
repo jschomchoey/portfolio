@@ -60,6 +60,8 @@ export default async function ProjectDetailPage({ params }) {
       meta={project}
       toc={headings}
       breadcrumb={breadcrumb}
+      currentId={project.id}
+      contentType="projects"
     >
       {project.body}
     </ArticleLayout>

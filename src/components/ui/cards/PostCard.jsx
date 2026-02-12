@@ -2,7 +2,7 @@ import Button from "@/components/ui/Button";
 import { ChevronRight } from "lucide-react";
 import SafeImage from "@/components/ui/SafeImage";
 
-export default function PostCard({ post }) {
+export default function PostCard({ post, basePath = "/blog" }) {
   return (
     <article className="post-card">
       <SafeImage src={post.image} width={540} height={310} alt={post.title} />
@@ -15,7 +15,7 @@ export default function PostCard({ post }) {
           <span className="date">{post.date}</span>
 
           <Button
-            href={`/blog/${post.slug}`}
+            href={`${basePath}/${post.slug}`}
             variant="primary"
             size="sm"
             icon={<ChevronRight />}

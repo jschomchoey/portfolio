@@ -47,6 +47,8 @@ export default async function BlogDetailPage({ params }) {
       meta={post}
       toc={headings}
       breadcrumb={breadcrumb}
+      currentId={post.id}
+      contentType="posts"
     >
       {post.body}
     </ArticleLayout>

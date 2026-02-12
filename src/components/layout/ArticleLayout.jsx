@@ -3,11 +3,14 @@ import SafeImage from "@/components/ui/SafeImage";
 import FadeUp from "@/components/animation/FadeUp";
 import TableOfContents from "@/components/shared/TableOfContents";
 import MarkdownRenderer from "@/components/shared/MarkdownRenderer";
+import LatestPosts from "@/components/shared/LatestPosts";
 
 export default function ArticleLayout({
   meta,
   toc = [],
   breadcrumb = [],
+  currentId,
+  contentType = "posts",
   children,
 }) {
   const { title, description, date, readingTime, image } = meta;
@@ -104,6 +107,11 @@ export default function ArticleLayout({
             </div>
           </div>
         </div>
+
+        {/* Latest Posts Section */}
+        {currentId && (
+          <LatestPosts currentId={currentId} contentType={contentType} />
+        )}
       </article>
     </main>
   );
