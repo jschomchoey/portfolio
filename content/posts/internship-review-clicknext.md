@@ -5,6 +5,7 @@ slug: "internship-review-clicknext"
 description: "ประสบการณ์การฝึกงานที่ ClickNext ในตำแหน่ง Frontend Developer ประสบการณ์ไม่มีวันลืม เป็นอย่างไร มีอะไรได้เรียนรู้บ้าง มาดูกัน!"
 image: "/images/posts/clicknext_logo.jpg"
 date: "2026-01-08"
+lastModified: "2026-02-12"
 ---
 
 ประสบการณ์การฝึกงานที่ ClickNext ในตำแหน่ง Frontend Developer ประสบการณ์ไม่มีวันลืม เป็นอย่างไร มีอะไรได้เรียนรู้บ้าง มาดูกัน!

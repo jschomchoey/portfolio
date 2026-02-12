@@ -5,6 +5,7 @@ slug: "jsonplaceholder-fake-online-rest-api"
 description: "macOS Arm ดันไม่มี Bootcamp ให้สร้าง USB ติดตั้ง Windows ไหนลองดู GUI เจ้าตลาดซิ เอ้า! ดันไม่รองรับอีก สร้างใช้เองเลยละกัน"
 image: "/images/posts/CrossBoot.png"
 date: "2026-01-08"
+lastModified: "2026-02-12"
 ---
 
 macOS Arm ดันไม่มี Bootcamp ให้สร้าง USB ติดตั้ง Windows ไหนลองดู GUI เจ้าตลาดซิ เอ้า! ดันไม่รองรับอีก สร้างใช้เองเลยละกัน

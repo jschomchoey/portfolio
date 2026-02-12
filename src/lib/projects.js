@@ -1,7 +1,7 @@
 import { createContentHelpers } from "./content";
 
 // Define fields for projects (includes 'type' field)
-const listFields = ["id", "title", "description", "image", "date", "type"];
+const listFields = ["id", "title", "description", "image", "date", "type", "lastModified"];
 
 // Create helpers using shared factory
 const { getList, getBySlug, getAllSlugs } = createContentHelpers("projects", listFields);

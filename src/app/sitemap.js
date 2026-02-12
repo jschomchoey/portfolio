@@ -1,7 +1,5 @@
-import fs from 'fs';
-import path from 'path';
-import { getAllPostSlugs } from '@/lib/posts';
-import { getAllProjectSlugs } from '@/lib/projects';
+import { getPostsList } from '@/lib/posts';
+import { getProjectsList } from '@/lib/projects';
 
 export default async function sitemap() {
   const baseUrl = 'https://t1ramisu.dev';
@@ -13,28 +11,18 @@ export default async function sitemap() {
   }));
 
   // Dynamic blog posts
-  const postSlugs = getAllPostSlugs();
-  const posts = postSlugs.map(({ slug }) => {
-    const filePath = path.join(process.cwd(), 'content/posts', `${slug}.md`);
-    const stats = fs.statSync(filePath);
-    
-    return {
-      url: `${baseUrl}/blog/${slug}`,
-      lastModified: stats.mtime.toISOString().split('T')[0],
-    };
-  });
+  const allPosts = getPostsList();
+  const posts = allPosts.map((post) => ({
+    url: `${baseUrl}/blog/${post.slug}`,
+    lastModified: post.lastModified || post.date,
+  }));
 
   // Dynamic projects
-  const projectSlugs = getAllProjectSlugs();
-  const projects = projectSlugs.map(({ slug }) => {
-    const filePath = path.join(process.cwd(), 'content/projects', `${slug}.md`);
-    const stats = fs.statSync(filePath);
-    
-    return {
-      url: `${baseUrl}/projects/${slug}`,
-      lastModified: stats.mtime.toISOString().split('T')[0],
-    };
-  });
+  const allProjects = getProjectsList();
+  const projects = allProjects.map((project) => ({
+    url: `${baseUrl}/projects/${project.slug}`,
+    lastModified: project.lastModified || project.date,
+  }));
 
   return [...routes, ...posts, ...projects];
 }
