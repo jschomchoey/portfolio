@@ -8,7 +8,7 @@ import Button from "@/components/ui/Button";
 import Capsule from "@/components/ui/Capsule";
 import Image from "next/image";
 import { Mail, FileText } from "lucide-react";
-// import { getCookie, setCookie } from "@/lib/cookies";
+import { getCookie, setCookie } from "@/lib/cookies";
 
 const contentMap = {
   fe: {
@@ -34,28 +34,25 @@ const contentMap = {
 export default function Hero() {
   const [activeRole, setActiveRole] = useState("fe");
 
-  // useEffect(() => {
-  //   const urlRole = new URLSearchParams(window.location.search).get("role");
-  //   const cookieRole = getCookie("preferredRole");
+  useEffect(() => {
+    const urlRole = new URLSearchParams(window.location.search).get("role");
+    const cookieRole = getCookie("preferredRole");
 
-  //   // Early return
-  //   if (!urlRole && !cookieRole) {
-  //     return;
-  //   }
+    const resolved =
+      (urlRole && contentMap[urlRole] && urlRole) ||
+      (cookieRole && contentMap[cookieRole] && cookieRole) ||
+      "fe";
 
-  //   const resolved =
-  //     (urlRole && contentMap[urlRole] ? urlRole : null) ||
-  //     (cookieRole && contentMap[cookieRole] ? cookieRole : null) ||
-  //     "fe";
+    // ถ้ามาจาก URL และ valid → บันทึก cookie
+    if (urlRole && contentMap[urlRole]) {
+      setCookie("preferredRole", urlRole);
+    }
 
-  //   if (urlRole && contentMap[urlRole]) {
-  //     setCookie("preferredRole", urlRole);
-  //   }
-
-  //   if (resolved !== "fe") {
-  //     setActiveRole(resolved);
-  //   }
-  // }, []);
+    // ถ้าค่าที่ resolve ไม่ใช่ default → อัปเดต state
+    if (resolved !== "fe") {
+      setActiveRole(resolved);
+    }
+  }, []);
 
   return (
     <section className="hero-section h-dvh min-h-[700px] max-h-[1200px] px-5 flex flex-col justify-center items-center">

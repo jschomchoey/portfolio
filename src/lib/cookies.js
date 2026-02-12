@@ -1,8 +1,11 @@
 export function getCookie(name) {
   if (typeof document === "undefined") return null;
   
-  const match = document.cookie.match(new RegExp(`(?:^|; )${name}=([^;]*)`));
-  return match ? decodeURIComponent(match[1]) : null;
+  const cookie = document.cookie
+    .split('; ')
+    .find(c => c.startsWith(name + '='));
+  
+  return cookie ? decodeURIComponent(cookie.split('=')[1]) : null;
 }
 
 export function setCookie(name, value, days = 3) {
