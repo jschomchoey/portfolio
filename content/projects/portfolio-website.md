@@ -1,6 +1,6 @@
 ---
 id: "2"
-title: "Mock Data: Project: Portfolio Website"
+title: "Project: Portfolio Website"
 slug: "portfolio-website"
 description: "Built a portfolio website using Next.js and Tailwind CSS. Implemented a responsive design with a modern and clean look."
 image: "/images/projects/t1ramisu.webp"
@@ -10,7 +10,7 @@ type: "Project"
 
 ## Overview
 
-สร้างเว็บไซต์ Portfolio ใช้ Next.js + Tailwind + SCSS และ Motion ที่เน้น Performance และ SEO สูงสุด โดยใช้เป็น SSG ทั้งหมด
+Create Portfolio Website using Next.js + Tailwind + SCSS and Motion with high performance and SEO optimization. Using SSG for all pages.
 
 ## Features
 
@@ -30,22 +30,22 @@ type: "Project"
 
 ## Project Structure
 
-```markdown
+```bash
 src/
-├── app/ # Next.js App Router (pages)
-├── components/ # React Components
-│ ├── animation/ # Animation wrapper components
-│ ├── layout/ # Layout components (Navbar, Footer)
-│ ├── providers/ # Context providers (ThemeProvider)
-│ ├── sections/ # Page sections (Hero, Projects, Posts, etc.)
-│ ├── shared/ # Shared components (MarkdownRenderer, TableOfContents)
-│ └── ui/ # UI components (Button, Capsule, Cards)
-├── lib/ # Utility functions และ data fetching
-└── styles/ # SCSS modules
-├── base/ # Base styles (variables, typography)
-├── layout/ # Layout styles
-├── sections/ # Section-specific styles
-└── ui/ # UI component styles
+├── app/            # Next.js App Router (pages)
+├── components/     # React Components
+│   ├── animation/  # Animation wrapper components
+│   ├── layout/     # Layout components (Navbar, Footer)
+│   ├── providers/  # Context providers (ThemeProvider)
+│   ├── sections/   # Page sections (Hero, Projects, Posts, etc.)
+│   ├── shared/     # Shared components (MarkdownRenderer, TableOfContents)
+│   └── ui/         # UI components (Button, Capsule, Cards)
+├── lib/            # Utility functions and data fetching
+└── styles/         # SCSS modules
+    ├── base/       # Base styles (variables, typography)
+    ├── layout/     # Layout styles
+    ├── sections/   # Section-specific styles
+    └── ui/         # UI component styles
 ```
 
 ## Tech Stack
@@ -54,3 +54,5 @@ src/
 - Tailwind CSS
 - SCSS
 - Motion (Framer Motion)
+
+Source Code: [https://github.com/jschomchoey/portfolio](https://github.com/jschomchoey/portfolio)
