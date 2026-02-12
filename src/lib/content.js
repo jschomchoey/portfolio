@@ -3,18 +3,9 @@ import path from "path";
 import matter from "gray-matter";
 import readingTime from "reading-time";
 
-/**
- * Create content helpers for a specific content type (posts, projects, etc.)
- * @param {string} contentType - "posts" or "projects"
- * @param {string[]} listFields - Fields to include in list view
- * @param {string[]} detailFields - Additional fields to include in detail view
- */
 export function createContentHelpers(contentType, listFields, detailFields = []) {
   const directory = path.join(process.cwd(), `content/${contentType}`);
 
-  /**
-   * Get list of all items (without body content)
-   */
   function getList() {
     const fileNames = fs.readdirSync(directory);
 
@@ -35,13 +26,10 @@ export function createContentHelpers(contentType, listFields, detailFields = [])
         return item;
       });
 
-    // Sort by date (newest first)
-    return allItems.sort((a, b) => new Date(b.date) - new Date(a.date));
+    // Sort by ID (newest first - higher ID means newer content)
+    return allItems.sort((a, b) => Number(b.id) - Number(a.id));
   }
 
-  /**
-   * Get a single item by slug (with full body content)
-   */
   function getBySlug(slug) {
     const fullPath = path.join(directory, `${slug}.md`);
 
@@ -64,9 +52,6 @@ export function createContentHelpers(contentType, listFields, detailFields = [])
     return item;
   }
 
-  /**
-   * Get all slugs (for static generation)
-   */
   function getAllSlugs() {
     const fileNames = fs.readdirSync(directory);
 
