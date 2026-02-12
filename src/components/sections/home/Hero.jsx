@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useLayoutEffect } from "react";
+import { useState, useEffect } from "react";
 import AnimatedText from "@/components/animation/StaggeredText";
 import FadeUp from "@/components/animation/FadeUp";
 import FadeDirectional from "@/components/animation/FadeDirectional";
@@ -34,7 +34,7 @@ const contentMap = {
 export default function Hero() {
   const [activeRole, setActiveRole] = useState("fe");
 
-  useLayoutEffect(() => {
+  useEffect(() => {
     const urlRole = new URLSearchParams(window.location.search).get("role");
     const cookieRole = getCookie("preferredRole");
 
