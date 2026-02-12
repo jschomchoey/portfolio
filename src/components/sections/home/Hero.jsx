@@ -7,24 +7,28 @@ import Image from "next/image";
 import { Mail, FileText } from "lucide-react";
 
 const contentMap = {
-  frontend: {
-    headline: "Bridging beautiful design and powerful performance to create websites that truly matter.",
+  fe: {
+    headline:
+      "Bridging beautiful design and powerful performance to create websites that truly matter.",
     highlightWords: ["beautiful", "performance"],
-    description: "Hi, I’m Teerapat Chomchoei (James). A Frontend Developer who enjoys turning thoughtful design into fast, user-friendly websites. I specialize in UX/UI-focused development with an emphasis on usability, performance, and clean visual consistency.",
+    description:
+      "Hi, I’m Teerapat Chomchoei (James). A Frontend Developer who enjoys turning thoughtful design into fast, user-friendly websites. I specialize in UX/UI-focused development with an emphasis on usability, performance, and clean visual consistency.",
     capsule: "Frontend Developer",
-    resumeURL: "/files/documents/Resume_Frontend.pdf",
+    resumeURL: "/files/documents/Resume_FE.pdf",
   },
-  softwareengineer: {
-    headline: "Bridging beautiful design and powerful performance to create websites that truly matter.",
+  se_fe: {
+    headline:
+      "Bridging beautiful design and powerful performance to create websites that truly matter.",
     highlightWords: ["beautiful", "performance"],
-    description: "Hi, I’m Teerapat Chomchoei (James). A Software Engineer who enjoys turning thoughtful design into fast, user-friendly websites. I specialize in UX/UI-focused development with an emphasis on usability, performance, and clean visual consistency.",
+    description:
+      "Hi, I’m Teerapat Chomchoei (James). A Software Engineer who enjoys turning thoughtful design into fast, user-friendly websites. I specialize in UX/UI-focused development with an emphasis on usability, performance, and clean visual consistency.",
     capsule: "Software Engineer",
-    resumeURL: "/files/documents/Resume_SoftwareEngineer.pdf",
+    resumeURL: "/files/documents/Resume_SE_FE.pdf",
   },
-}
+};
 
 export default function Hero({ role }) {
-  const activeRole = contentMap[role] ? role : 'frontend';
+  const activeRole = contentMap[role] ? role : "fe";
 
   return (
     <section className="hero-section h-dvh min-h-[700px] max-h-[1200px] px-5 flex flex-col justify-center items-center">
