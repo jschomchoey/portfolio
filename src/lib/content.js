@@ -27,7 +27,7 @@ export function createContentHelpers(contentType, listFields, detailFields = [])
       });
 
     // Sort by ID (newest first - higher ID means newer content)
-    return allItems.sort((a, b) => Number(b.id) - Number(a.id));
+    return allItems.sort((a, b) => b.id - a.id);
   }
 
   function getBySlug(slug) {

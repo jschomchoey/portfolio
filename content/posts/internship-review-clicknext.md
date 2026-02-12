@@ -1,5 +1,5 @@
 ---
-id: 2
+id: 1
 title: "Mock Data: รีวิวฝึกงานที่ ClickNext - Frontend Developer"
 slug: "internship-review-clicknext"
 description: "ประสบการณ์การฝึกงานที่ ClickNext ในตำแหน่ง Frontend Developer ประสบการณ์ไม่มีวันลืม เป็นอย่างไร มีอะไรได้เรียนรู้บ้าง มาดูกัน!"
