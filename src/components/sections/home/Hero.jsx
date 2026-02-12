@@ -8,6 +8,7 @@ import Button from "@/components/ui/Button";
 import Capsule from "@/components/ui/Capsule";
 import Image from "next/image";
 import { Mail, FileText } from "lucide-react";
+import { getCookie, setCookie } from "@/lib/cookies";
 
 const contentMap = {
   fe: {
@@ -29,17 +30,6 @@ const contentMap = {
     resumeURL: "/files/documents/Resume_SE_FE.pdf",
   },
 };
-
-function getCookie(name) {
-  const match = document.cookie.match(new RegExp(`(?:^|; )${name}=([^;]*)`));
-  return match ? decodeURIComponent(match[1]) : null;
-}
-
-function setCookie(name, value, days = 7) {
-  const expiryDate = new Date();
-  expiryDate.setDate(expiryDate.getDate() + days);
-  document.cookie = `${name}=${value}; path=/; expires=${expiryDate.toUTCString()}; SameSite=Lax`;
-}
 
 export default function Hero() {
   const [activeRole, setActiveRole] = useState("fe");
