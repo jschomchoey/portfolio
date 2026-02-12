@@ -1,6 +1,11 @@
 .article-layout {
     .breadcrumb {
 
+        background: var(--bg-secondary);
+        width: fit-content;
+        padding: 0.5rem 1rem;
+        border-radius: 1000px;
+
         a,
         span {
             display: -webkit-box;
