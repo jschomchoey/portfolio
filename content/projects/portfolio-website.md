@@ -3,7 +3,7 @@ id: "2"
 title: "Mock Data: Project: Portfolio Website"
 slug: "portfolio-website"
 description: "Built a portfolio website using Next.js and Tailwind CSS. Implemented a responsive design with a modern and clean look."
-image: "/images/projects/portfolio.webp"
+image: "/images/projects/t1ramisu.webp"
 date: "2026-02-12"
 type: "Project"
 ---

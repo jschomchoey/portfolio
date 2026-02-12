@@ -38,6 +38,11 @@ export default function Hero() {
     const urlRole = new URLSearchParams(window.location.search).get("role");
     const cookieRole = getCookie("preferredRole");
 
+    // Early return
+    if (!urlRole && !cookieRole) {
+      return;
+    }
+
     const resolved =
       (urlRole && contentMap[urlRole] ? urlRole : null) ||
       (cookieRole && contentMap[cookieRole] ? cookieRole : null) ||
