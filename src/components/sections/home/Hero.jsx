@@ -1,3 +1,6 @@
+"use client";
+
+import { useState, useLayoutEffect } from "react";
 import AnimatedText from "@/components/animation/StaggeredText";
 import FadeUp from "@/components/animation/FadeUp";
 import FadeDirectional from "@/components/animation/FadeDirectional";
@@ -12,7 +15,7 @@ const contentMap = {
       "Bridging beautiful design and powerful performance to create websites that truly matter.",
     highlightWords: ["beautiful", "performance"],
     description:
-      "Hi, I’m Teerapat Chomchoei (James). A Frontend Developer who enjoys turning thoughtful design into fast, user-friendly websites. I specialize in UX/UI-focused development with an emphasis on usability, performance, and clean visual consistency.",
+      "Hi, I'm Teerapat Chomchoei (James). A Frontend Developer who enjoys turning thoughtful design into fast, user-friendly websites. I specialize in UX/UI-focused development with an emphasis on usability, performance, and clean visual consistency.",
     capsule: "Frontend Developer",
     resumeURL: "/files/documents/Resume_FE.pdf",
   },
@@ -21,14 +24,43 @@ const contentMap = {
       "Bridging beautiful design and powerful performance to create websites that truly matter.",
     highlightWords: ["beautiful", "performance"],
     description:
-      "Hi, I’m Teerapat Chomchoei (James). A Software Engineer who enjoys turning thoughtful design into fast, user-friendly websites. I specialize in UX/UI-focused development with an emphasis on usability, performance, and clean visual consistency.",
+      "Hi, I'm Teerapat Chomchoei (James). A Software Engineer who enjoys turning thoughtful design into fast, user-friendly websites. I specialize in UX/UI-focused development with an emphasis on usability, performance, and clean visual consistency.",
     capsule: "Software Engineer",
     resumeURL: "/files/documents/Resume_SE_FE.pdf",
   },
 };
 
-export default function Hero({ role }) {
-  const activeRole = contentMap[role] ? role : "fe";
+function getCookie(name) {
+  const match = document.cookie.match(new RegExp(`(?:^|; )${name}=([^;]*)`));
+  return match ? decodeURIComponent(match[1]) : null;
+}
+
+function setCookie(name, value, days = 7) {
+  const expiryDate = new Date();
+  expiryDate.setDate(expiryDate.getDate() + days);
+  document.cookie = `${name}=${value}; path=/; expires=${expiryDate.toUTCString()}; SameSite=Lax`;
+}
+
+export default function Hero() {
+  const [activeRole, setActiveRole] = useState("fe");
+
+  useLayoutEffect(() => {
+    const urlRole = new URLSearchParams(window.location.search).get("role");
+    const cookieRole = getCookie("preferredRole");
+
+    const resolved =
+      (urlRole && contentMap[urlRole] ? urlRole : null) ||
+      (cookieRole && contentMap[cookieRole] ? cookieRole : null) ||
+      "fe";
+
+    if (urlRole && contentMap[urlRole]) {
+      setCookie("preferredRole", urlRole);
+    }
+
+    if (resolved !== "fe") {
+      setActiveRole(resolved);
+    }
+  }, []);
 
   return (
     <section className="hero-section h-dvh min-h-[700px] max-h-[1200px] px-5 flex flex-col justify-center items-center">
