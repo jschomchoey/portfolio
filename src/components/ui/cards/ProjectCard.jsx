@@ -2,6 +2,7 @@ import Button from "@/components/ui/Button";
 import { ChevronRight } from "lucide-react";
 import SafeImage from "@/components/ui/SafeImage";
 import Capsule from "@/components/ui/Capsule";
+import { formatDate } from "@/lib/date";
 
 export default function ProjectCard({ project }) {
   return (
@@ -24,7 +25,7 @@ export default function ProjectCard({ project }) {
         </div>
 
         <div className="project-footer">
-          <span className="date">{project.date}</span>
+          <span className="date">{formatDate(project.date)}</span>
 
           <Button
             href={`/projects/${project.slug}`}

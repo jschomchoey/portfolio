@@ -1,6 +1,7 @@
 import Button from "@/components/ui/Button";
 import { ChevronRight } from "lucide-react";
 import SafeImage from "@/components/ui/SafeImage";
+import { formatDate } from "@/lib/date";
 
 export default function FeaturedPostCard({ post }) {
   return (
@@ -12,7 +13,7 @@ export default function FeaturedPostCard({ post }) {
         <p className="description mb-5">{post.description}</p>
 
         <div className="post-footer">
-          <span className="date">{post.date}</span>
+          <span className="date">{formatDate(post.date)}</span>
 
           <Button
             href={`/blog/${post.slug}`}

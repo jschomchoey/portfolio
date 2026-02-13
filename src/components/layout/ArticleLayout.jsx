@@ -4,6 +4,8 @@ import FadeUp from "@/components/animation/FadeUp";
 import TableOfContents from "@/components/shared/TableOfContents";
 import MarkdownRenderer from "@/components/shared/MarkdownRenderer";
 import LatestPosts from "@/components/shared/LatestPosts";
+import { House } from "lucide-react";
+import { formatDate } from "@/lib/date";
 
 export default function ArticleLayout({
   meta,
@@ -58,7 +60,7 @@ export default function ArticleLayout({
 
           <FadeUp delay={0.1}>
             <div className="meta flex items-center gap-4 text-sm text-gray-500">
-              {date && <span className="date">{date}</span>}
+              {date && <span className="date">{formatDate(date)}</span>}
               {readingTime && (
                 <span className="reading-time">{readingTime}</span>
               )}
