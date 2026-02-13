@@ -2,7 +2,7 @@
 
   h2,
   h3 {
-    scroll-margin-top: 100px;
+    scroll-margin-top: 165px;
   }
 
   .content {
@@ -77,6 +77,14 @@
           border-radius: 0.5rem;
           // background-color: rgb(231, 231, 231);
           font-size: var(--text-small);
+        }
+      }
+
+      p {
+        code {
+          background-color: var(--color-gray);
+          border-radius: 0.5rem;
+          padding: 0.1rem 0.2rem;
         }
       }
 

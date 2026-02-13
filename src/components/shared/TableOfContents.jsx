@@ -9,7 +9,7 @@ export default function TableOfContents({ headings }) {
     function onScroll() {
       const scrollY = window.scrollY;
       let current = null;
-      const offset = 150; // px from top
+      const offset = 170; // px from top
       for (const h of headings) {
         const el = document.getElementById(h.id);
         if (el) {
