@@ -4,8 +4,8 @@ title: "T1ramisu - Portfolio Website"
 slug: "portfolio-website"
 description: "Built a portfolio website using Next.js and Tailwind CSS. Implemented a responsive design with a modern and clean look. Make it high performance and SEO optimization."
 image: "/images/projects/t1ramisu.webp"
-date: "2026-02-12"
-lastModified: "2026-02-12"
+date: "2026-02-09"
+lastModified: "2026-02-09"
 type: "Project"
 ---
 

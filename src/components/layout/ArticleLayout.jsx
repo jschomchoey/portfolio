@@ -35,14 +35,21 @@ export default function ArticleLayout({
                 <div key={index} className="flex items-center gap-1">
                   {item.href ? (
                     <Link href={item.href} className="hover:underline">
-                      {item.label}
+                      {item.label === "Home" ? (
+                        <div className="flex items-center gap-2">
+                          <House className="w-4 h-4" />
+                          {item.label}
+                        </div>
+                      ) : (
+                        item.label
+                      )}
                     </Link>
                   ) : (
                     <span className="text-gray-700 font-medium">
                       {item.label}
                     </span>
                   )}
-                  {index < breadcrumb.length - 1 && <span>/</span>}
+                  {index < breadcrumb.length - 1 && <span>{" / "}</span>}
                 </div>
               ))}
             </nav>

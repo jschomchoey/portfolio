@@ -4,8 +4,8 @@ title: "ClickNext Internship | Frontend Developer"
 slug: "clickNext-internship-frontend-developer"
 description: "Worked on corporate CMS customization, security vulnerability fixes, and government backend testing, focusing on responsive design, system stability, and bug reduction."
 image: "/images/projects/clicknext_logo.jpg"
-date: "2026-01-08"
-lastModified: "2026-02-12"
+date: "2026-02-10"
+lastModified: "2026-02-10"
 type: "Internship"
 ---
 

@@ -1,11 +1,11 @@
 ---
-id: 3
+id: 2
 title: "Mock Data: เมื่อ Framer Motion ต้องการ Client Component ร่วมกับ Next.js 13"
 slug: "framer-motion-with-nextjs-13"
 description: "เลือกใช้ Next.js เพื่อจะใช้ประโยชน์จาก Server Component แต่ Framer Motion ดันต้องการ Client Component ในการทำ Animation จะทำอย่างไรดี?"
 image: "/images/posts/next_motion.jpg"
-date: "2026-01-08"
-lastModified: "2026-02-12"
+date: "2026-02-08"
+lastModified: "2026-02-08"
 ---
 
 เลือกใช้ Next.js เพื่อจะใช้ประโยชน์จาก Server Component แต่ Framer Motion ดันต้องการ Client Component ในการทำ Animation จะทำอย่างไรดี?
