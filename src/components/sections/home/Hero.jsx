@@ -1,6 +1,6 @@
-// "use client";
+"use client";
 
-// import { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import AnimatedText from "@/components/animation/StaggeredText";
 import FadeUp from "@/components/animation/FadeUp";
 import FadeDirectional from "@/components/animation/FadeDirectional";
@@ -31,10 +31,10 @@ const contentMap = {
   },
 };
 
-const activeRole = "fe";
+// const activeRole = "fe";
 
 export default function Hero() {
-  // const [activeRole, setActiveRole] = useState("fe");
+  const [activeRole, setActiveRole] = useState("fe");
 
   // useEffect(() => {
   //   const urlRole = new URLSearchParams(window.location.search).get("role");
