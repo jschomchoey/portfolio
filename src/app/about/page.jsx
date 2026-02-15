@@ -1,7 +1,7 @@
 export default function About() {
   return (
-    <div>
-      <p>About</p>
+    <div className="h-dvh flex items-center justify-center">
+      <p>Coming Soon...</p>
     </div>
   );
 }

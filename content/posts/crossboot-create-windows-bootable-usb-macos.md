@@ -159,7 +159,7 @@ wimlib-imagex split /Volumes/[ISO_NAME]/sources/install.wim /Volumes/[USB_NAME]/
 
 ### Cleanup
 
-แน่นอนว่าการเขียนลง Temp Directory หาก User ยกเลิกกลางทาง หรือ App Crash กลางทาง หรืออะไรก็ตาม จะทำให้ File ที่ Split ไว้ใน Temp Directory ค้างอยู่ ซึ่งจะกินพื้นที่มาก ๆ แถม User เข้าไปลบยากด้วยเนื่องจากเป็น Hiddle Folder และอยู่ใน Directory ที่ไม่คุ้นเคย
+แน่นอนว่าการเขียนลง Temp Directory หาก User ยกเลิกกลางทาง หรือ App Crash กลางทาง หรืออะไรก็ตาม จะทำให้ File ที่ Split ไว้ใน Temp Directory ค้างอยู่ ซึ่งจะกินพื้นที่มาก ๆ แถม User เข้าไปลบยากด้วยเนื่องจากเป็น Hidden Folder และอยู่ใน Directory ที่ไม่คุ้นเคย
 
 จึงต้องมีการจัดการ Cleanup หลังการใช้งานทุกครั้ง แต่การ Cleanup หลังจากทำงานเรียบร้อยยังไม่พอ ไหนจะกรณีที่ User ทำการ Force Close หรืออะไรก็ตามระหว่างทางมันจะไม่เข้า Cleanup Function จึงต้องทำการ Cleanup ทุกครั้งที่เปิดใช้งานด้วย
 
