@@ -29,4 +29,4 @@ Developed a macOS utility to create Windows bootable USB drives directly on macO
 - **Platform:** macOS
 - **Tools:** wimlib
 
-[https://github.com/jschomchoey/CrossBoot](https://github.com/jschomchoey/CrossBoot)
+[CrossBoot](https://github.com/jschomchoey/CrossBoot)
