@@ -6,6 +6,7 @@ import Footer from "../components/layout/Footer";
 import ThemeProvider from "../components/providers/ThemeProvider";
 
 import { Analytics } from "@vercel/analytics/next";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 export const metadata = {
   metadataBase: new URL("https://t1ramisu.dev"),
@@ -59,6 +60,7 @@ export default function RootLayout({ children }) {
           {<Footer />}
         </ThemeProvider>
         <Analytics />
+        <SpeedInsights />
       </body>
     </html>
   );
