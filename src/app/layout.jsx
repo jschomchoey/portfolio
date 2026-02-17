@@ -5,6 +5,8 @@ import Navbar from "../components/layout/Navbar";
 import Footer from "../components/layout/Footer";
 import ThemeProvider from "../components/providers/ThemeProvider";
 
+import { Analytics } from "@vercel/analytics/next";
+
 export const metadata = {
   metadataBase: new URL("https://t1ramisu.dev"),
   title: {
@@ -56,6 +58,7 @@ export default function RootLayout({ children }) {
           <main>{children}</main>
           {<Footer />}
         </ThemeProvider>
+        <Analytics />
       </body>
     </html>
   );
